@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4cdca3a08e4b687214d2ad64cf0cad89 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4cdca3a08e4b687214d2ad64cf0cad89" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4cdca3a08e4b687214d2ad64cf0cad89 = L.map(
+                "map_4cdca3a08e4b687214d2ad64cf0cad89",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9881f97332d13c163c36b12bd4daed19 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4cdca3a08e4b687214d2ad64cf0cad89);
+        
+    
+            var marker_cluster_4846c948decb9f329c0fec391517559f = L.markerClusterGroup(
+                {}
+            );
+            map_4cdca3a08e4b687214d2ad64cf0cad89.addLayer(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var marker_8a78ca2ec5f4a7ecb35ceb4ca459c8c5 = L.marker(
+                [-22.16812136, -44.39470819],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_29c4b6f97973eb5a81ed0b1aa5c37003 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8a78ca2ec5f4a7ecb35ceb4ca459c8c5.setIcon(icon_29c4b6f97973eb5a81ed0b1aa5c37003);
+        
+    
+        var popup_2571046aea5c1c94a6b26ca16977f9b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e29150c21639b92834d718729e774ff8 = $(`<div id="html_e29150c21639b92834d718729e774ff8" style="width: 100.0%; height: 100.0%;"><b>Observatório de Territórios Sustentáveis e Saudáveis da Bocaina (OTSS).</b><br><a href='https://www.otss.org.br/' target='_blank'>https://www.otss.org.br/</a></div>`)[0];
+            popup_2571046aea5c1c94a6b26ca16977f9b5.setContent(html_e29150c21639b92834d718729e774ff8);
+        
+
+        marker_8a78ca2ec5f4a7ecb35ceb4ca459c8c5.bindPopup(popup_2571046aea5c1c94a6b26ca16977f9b5)
+        ;
+
+        
+    
+    
+            var marker_b287c79efd6d7b48e4756de87bf3e883 = L.marker(
+                [-33.86103716, 151.2367813],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_fa9a9592b11138694b7aca6da6c14802 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b287c79efd6d7b48e4756de87bf3e883.setIcon(icon_fa9a9592b11138694b7aca6da6c14802);
+        
+    
+        var popup_b7db1eca3874e4e46b7879a6cc3ea496 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4ba474c96c2c63018a5286eb018b159 = $(`<div id="html_e4ba474c96c2c63018a5286eb018b159" style="width: 100.0%; height: 100.0%;"><b>Australian Urban Observatory (AUO)</b><br><a href='https://auo.org.au/' target='_blank'>https://auo.org.au/</a></div>`)[0];
+            popup_b7db1eca3874e4e46b7879a6cc3ea496.setContent(html_e4ba474c96c2c63018a5286eb018b159);
+        
+
+        marker_b287c79efd6d7b48e4756de87bf3e883.bindPopup(popup_b7db1eca3874e4e46b7879a6cc3ea496)
+        ;
+
+        
+    
+    
+            var marker_2fa5426309c19e8930cc28d1f34e8e13 = L.marker(
+                [-1.460886848, -48.48522282],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_db6ea584db023126614fd198091ef919 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2fa5426309c19e8930cc28d1f34e8e13.setIcon(icon_db6ea584db023126614fd198091ef919);
+        
+    
+        var popup_a26c657a9afd300217a2b654ea94f3d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_24e243363d9841068439710ed25bb972 = $(`<div id="html_24e243363d9841068439710ed25bb972" style="width: 100.0%; height: 100.0%;"><b>Observatório Social de Belém (SOB)</b><br><a href='https://www.gov.br/cgu/pt-br/governo-aberto/iniciativas-de-governo-aberto/organizacoes-da-sociedade-civil/de-a-a-z/observatorio-social-de-belem' target='_blank'>https://www.gov.br/cgu/pt-br/governo-aberto/iniciativas-de-governo-aberto/organizacoes-da-sociedade-civil/de-a-a-z/observatorio-social-de-belem</a></div>`)[0];
+            popup_a26c657a9afd300217a2b654ea94f3d5.setContent(html_24e243363d9841068439710ed25bb972);
+        
+
+        marker_2fa5426309c19e8930cc28d1f34e8e13.bindPopup(popup_a26c657a9afd300217a2b654ea94f3d5)
+        ;
+
+        
+    
+    
+            var marker_906a6e96aa3d3b7e6489d23a5713a688 = L.marker(
+                [-19.91932337, -43.91987071],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_1ee942ed55b9da649abfe5e4d89686df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_906a6e96aa3d3b7e6489d23a5713a688.setIcon(icon_1ee942ed55b9da649abfe5e4d89686df);
+        
+    
+        var popup_96a1a250fc6a9322e07089c6ff1bc34a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_876e051212d3c7e674f825eef1e2397b = $(`<div id="html_876e051212d3c7e674f825eef1e2397b" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Urbana de Belo Horizonte (OSUBH)</b><br><a href='https://osubh.medicina.ufmg.br/' target='_blank'>https://osubh.medicina.ufmg.br/</a></div>`)[0];
+            popup_96a1a250fc6a9322e07089c6ff1bc34a.setContent(html_876e051212d3c7e674f825eef1e2397b);
+        
+
+        marker_906a6e96aa3d3b7e6489d23a5713a688.bindPopup(popup_96a1a250fc6a9322e07089c6ff1bc34a)
+        ;
+
+        
+    
+    
+            var marker_fab5759c3ceaf289dbf50d002ef1f130 = L.marker(
+                [-29.90406981, -51.18368103],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_c7abf8f8a1e7e7b0cb80cbf3230e9ab7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fab5759c3ceaf289dbf50d002ef1f130.setIcon(icon_c7abf8f8a1e7e7b0cb80cbf3230e9ab7);
+        
+    
+        var popup_bc2e0aa01090d292738682e65853e448 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cb532dd35e3ab2ae69bc156a9a2057f = $(`<div id="html_0cb532dd35e3ab2ae69bc156a9a2057f" style="width: 100.0%; height: 100.0%;"><b>Observatório de Segurança Pública de Canoas (OSPC)</b><br><a href='https://www.canoas.rs.gov.br/ospc/' target='_blank'>https://www.canoas.rs.gov.br/ospc/</a></div>`)[0];
+            popup_bc2e0aa01090d292738682e65853e448.setContent(html_0cb532dd35e3ab2ae69bc156a9a2057f);
+        
+
+        marker_fab5759c3ceaf289dbf50d002ef1f130.bindPopup(popup_bc2e0aa01090d292738682e65853e448)
+        ;
+
+        
+    
+    
+            var marker_e02bf5d9cffd9508d688c41711554d96 = L.marker(
+                [-25.42789675, -49.26911265],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_fb8b508dca16803e1c99cd37d9a161e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e02bf5d9cffd9508d688c41711554d96.setIcon(icon_fb8b508dca16803e1c99cd37d9a161e2);
+        
+    
+        var popup_7c9edbf1cb6d90a2dbcb6a7d93dd2966 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_262b0f9075df677b44eca87601e3441d = $(`<div id="html_262b0f9075df677b44eca87601e3441d" style="width: 100.0%; height: 100.0%;"><b>Observatório de Conflitos Urbanos de Curitiba</b><br><a href='https://tecnologia.ufpr.br/ceppur/atuacao/pesquisa/conflitoscuritiba/' target='_blank'>https://tecnologia.ufpr.br/ceppur/atuacao/pesquisa/conflitoscuritiba/</a></div>`)[0];
+            popup_7c9edbf1cb6d90a2dbcb6a7d93dd2966.setContent(html_262b0f9075df677b44eca87601e3441d);
+        
+
+        marker_e02bf5d9cffd9508d688c41711554d96.bindPopup(popup_7c9edbf1cb6d90a2dbcb6a7d93dd2966)
+        ;
+
+        
+    
+    
+            var marker_d72eb6fe8816dd0137deff93453ca571 = L.marker(
+                [-3.734816696, -38.5120988],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_2f36ca4e658d50dbdcbb3a3501ef2dca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d72eb6fe8816dd0137deff93453ca571.setIcon(icon_2f36ca4e658d50dbdcbb3a3501ef2dca);
+        
+    
+        var popup_fdab4bad4d61a4765784eb3c82e7f991 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4893846ddec0e22450b66832507aade5 = $(`<div id="html_4893846ddec0e22450b66832507aade5" style="width: 100.0%; height: 100.0%;"><b>Observatório Fortaleza Cidade Inteligente</b><br><a href='https://fortalezainteligente.fortaleza.ce.gov.br/' target='_blank'>https://fortalezainteligente.fortaleza.ce.gov.br/</a></div>`)[0];
+            popup_fdab4bad4d61a4765784eb3c82e7f991.setContent(html_4893846ddec0e22450b66832507aade5);
+        
+
+        marker_d72eb6fe8816dd0137deff93453ca571.bindPopup(popup_fdab4bad4d61a4765784eb3c82e7f991)
+        ;
+
+        
+    
+    
+            var marker_a8af90a08d3611673de13e21331e56a5 = L.marker(
+                [-26.90658222, -48.65786921],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_d63ba3a0d7f67ec6d4cb6d8e27003eaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8af90a08d3611673de13e21331e56a5.setIcon(icon_d63ba3a0d7f67ec6d4cb6d8e27003eaf);
+        
+    
+        var popup_0a86561b3790759aad32334a0be1c047 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_44882ab53d475c3393a84702738283a0 = $(`<div id="html_44882ab53d475c3393a84702738283a0" style="width: 100.0%; height: 100.0%;"><b>Observatório Social de Itajaí (OSI).</b><br><a href='https://www.ositajai.org/' target='_blank'>https://www.ositajai.org/</a></div>`)[0];
+            popup_0a86561b3790759aad32334a0be1c047.setContent(html_44882ab53d475c3393a84702738283a0);
+        
+
+        marker_a8af90a08d3611673de13e21331e56a5.bindPopup(popup_0a86561b3790759aad32334a0be1c047)
+        ;
+
+        
+    
+    
+            var marker_db5d3ef4fa353c8412944b5bab0e5e15 = L.marker(
+                [-17.88802347, -51.72590579],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_bad575554b7d7334c685cd10c6a4a370 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db5d3ef4fa353c8412944b5bab0e5e15.setIcon(icon_bad575554b7d7334c685cd10c6a4a370);
+        
+    
+        var popup_dfe6658fc2b5378482a8af4c7e2024f5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8542473c49de5d65d3e0ec1fa024739b = $(`<div id="html_8542473c49de5d65d3e0ec1fa024739b" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Mental da Universidade Federal de Jataí (obsam.ufj)</b><br><a href='https://obsamufj.wixsite.com/obsam-ufj/sobre-n%C3%B3s' target='_blank'>https://obsamufj.wixsite.com/obsam-ufj/sobre-n%C3%B3s</a></div>`)[0];
+            popup_dfe6658fc2b5378482a8af4c7e2024f5.setContent(html_8542473c49de5d65d3e0ec1fa024739b);
+        
+
+        marker_db5d3ef4fa353c8412944b5bab0e5e15.bindPopup(popup_dfe6658fc2b5378482a8af4c7e2024f5)
+        ;
+
+        
+    
+    
+            var marker_593658173b01e733416488f39a297dc4 = L.marker(
+                [-22.38296183, -41.78171342],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_3ff193e5e3d12cf433df7af2a3b5f962 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_593658173b01e733416488f39a297dc4.setIcon(icon_3ff193e5e3d12cf433df7af2a3b5f962);
+        
+    
+        var popup_1f2a4659e175da0b251574a2b354b8d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e410170cf06dfa8afb563a7a9a22a9aa = $(`<div id="html_e410170cf06dfa8afb563a7a9a22a9aa" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde de Macaé (RJ)</b><br><a href='https://macae.rj.gov.br/saude/leitura/noticia/observatorio-de-cuidados-em-saude-e-inaugurado-em-macae' target='_blank'>https://macae.rj.gov.br/saude/leitura/noticia/observatorio-de-cuidados-em-saude-e-inaugurado-em-macae</a></div>`)[0];
+            popup_1f2a4659e175da0b251574a2b354b8d2.setContent(html_e410170cf06dfa8afb563a7a9a22a9aa);
+        
+
+        marker_593658173b01e733416488f39a297dc4.bindPopup(popup_1f2a4659e175da0b251574a2b354b8d2)
+        ;
+
+        
+    
+    
+            var marker_31f70dd4a8a469005a50d6832680bacf = L.marker(
+                [-29.71459557, -52.42992436],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_3db7018942aee19895c1f670f539d965 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31f70dd4a8a469005a50d6832680bacf.setIcon(icon_3db7018942aee19895c1f670f539d965);
+        
+    
+        var popup_379438d9224d00feae970ad40b77cbd4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95b538ec35a817ac3e36216260a1d18c = $(`<div id="html_95b538ec35a817ac3e36216260a1d18c" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Mental - OBSERVA SAÚDE MENTAL - Santa Cruz do Sul RS</b><br><a href='https://observasaudemental.wixsite.com/website' target='_blank'>https://observasaudemental.wixsite.com/website</a></div>`)[0];
+            popup_379438d9224d00feae970ad40b77cbd4.setContent(html_95b538ec35a817ac3e36216260a1d18c);
+        
+
+        marker_31f70dd4a8a469005a50d6832680bacf.bindPopup(popup_379438d9224d00feae970ad40b77cbd4)
+        ;
+
+        
+    
+    
+            var marker_eb659c92c7f054d87c417a4b1403e6b5 = L.marker(
+                [-3.684871754, -40.35620365],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_e6a912619fe7a2372b5b23ac5ffc5f9e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb659c92c7f054d87c417a4b1403e6b5.setIcon(icon_e6a912619fe7a2372b5b23ac5ffc5f9e);
+        
+    
+        var popup_ae6e2df71dfb2f898cd49bc5cda2372f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_adebadfc052f314e30c0fc32e8069ae5 = $(`<div id="html_adebadfc052f314e30c0fc32e8069ae5" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Mental e Política sobre drogas - GESAM/UVA/Secretaria de Saúde de Sobral CE</b><br><a href='https://observatoriodesaudemental.com.br/' target='_blank'>https://observatoriodesaudemental.com.br/</a></div>`)[0];
+            popup_ae6e2df71dfb2f898cd49bc5cda2372f.setContent(html_adebadfc052f314e30c0fc32e8069ae5);
+        
+
+        marker_eb659c92c7f054d87c417a4b1403e6b5.bindPopup(popup_ae6e2df71dfb2f898cd49bc5cda2372f)
+        ;
+
+        
+    
+    
+            var marker_2f6be6ac5a624e12f82d57fb715a2f0f = L.marker(
+                [-15.79806784, -47.8896497],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_2a5e439ed16aa74dd8d10ed0423f17e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f6be6ac5a624e12f82d57fb715a2f0f.setIcon(icon_2a5e439ed16aa74dd8d10ed0423f17e3);
+        
+    
+        var popup_a62ba26c5e29d34bbdf866fbf8e9ce3d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_910eb56e8031c2f82237f1efdd914327 = $(`<div id="html_910eb56e8031c2f82237f1efdd914327" style="width: 100.0%; height: 100.0%;"><b>Observatório do Turismo do Distrito Federal (OTDF) </b><br><a href='https://www.turismo.df.gov.br/observatorio-do-turismo-2/' target='_blank'>https://www.turismo.df.gov.br/observatorio-do-turismo-2/</a></div>`)[0];
+            popup_a62ba26c5e29d34bbdf866fbf8e9ce3d.setContent(html_910eb56e8031c2f82237f1efdd914327);
+        
+
+        marker_2f6be6ac5a624e12f82d57fb715a2f0f.bindPopup(popup_a62ba26c5e29d34bbdf866fbf8e9ce3d)
+        ;
+
+        
+    
+    
+            var marker_e5432729175eeb5db770c3a9aab5fc58 = L.marker(
+                [-22.9112395, -43.1349348],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_99da02d92cdfce6a7027a0bcdfd296a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e5432729175eeb5db770c3a9aab5fc58.setIcon(icon_99da02d92cdfce6a7027a0bcdfd296a8);
+        
+    
+        var popup_fc88eee50042f293df86d8a7586cd187 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad0b16bfada42c3a9d0b898188d6445c = $(`<div id="html_ad0b16bfada42c3a9d0b898188d6445c" style="width: 100.0%; height: 100.0%;"><b>Observatório de Tecnologias de Informação e Comunicação em Sistemas e Serviços de Saúde (OTICS-Rio)</b><br><a href='https://oticsrio.com.br/' target='_blank'>https://oticsrio.com.br/</a></div>`)[0];
+            popup_fc88eee50042f293df86d8a7586cd187.setContent(html_ad0b16bfada42c3a9d0b898188d6445c);
+        
+
+        marker_e5432729175eeb5db770c3a9aab5fc58.bindPopup(popup_fc88eee50042f293df86d8a7586cd187)
+        ;
+
+        
+    
+    
+            var marker_202846ddb0366b317eb5228d00850d64 = L.marker(
+                [46.20338306, 6.14986229],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_054ee604470b1ca16dc2268b9fb2565a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_202846ddb0366b317eb5228d00850d64.setIcon(icon_054ee604470b1ca16dc2268b9fb2565a);
+        
+    
+        var popup_95d9d6e8258faaa7887fd24a75dd5266 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac8869beffe7c2c57fba6663d5c39dc2 = $(`<div id="html_ac8869beffe7c2c57fba6663d5c39dc2" style="width: 100.0%; height: 100.0%;"><b>Observatório da Cidadania (Social Watch)</b><br><a href='https://www.socialwatch.org/sites/default/files/book2002_bra.pdf' target='_blank'>https://www.socialwatch.org/sites/default/files/book2002_bra.pdf</a></div>`)[0];
+            popup_95d9d6e8258faaa7887fd24a75dd5266.setContent(html_ac8869beffe7c2c57fba6663d5c39dc2);
+        
+
+        marker_202846ddb0366b317eb5228d00850d64.bindPopup(popup_95d9d6e8258faaa7887fd24a75dd5266)
+        ;
+
+        
+    
+    
+            var marker_4c87652102fd613449afc29d17c3f841 = L.marker(
+                [46.20338306, 6.14986229],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_fe0b488f6b3f32136ca269c07d1b6980 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c87652102fd613449afc29d17c3f841.setIcon(icon_fe0b488f6b3f32136ca269c07d1b6980);
+        
+    
+        var popup_a4963df877618d51479c308c6b5f7593 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4a664f1885ce714dc6e4d2293792745 = $(`<div id="html_b4a664f1885ce714dc6e4d2293792745" style="width: 100.0%; height: 100.0%;"><b>Observatório Global de Saúde (Global Health Observatory - GHO)</b><br><a href='https://www.who.int/data/gho' target='_blank'>https://www.who.int/data/gho</a></div>`)[0];
+            popup_a4963df877618d51479c308c6b5f7593.setContent(html_b4a664f1885ce714dc6e4d2293792745);
+        
+
+        marker_4c87652102fd613449afc29d17c3f841.bindPopup(popup_a4963df877618d51479c308c6b5f7593)
+        ;
+
+        
+    
+    
+            var marker_8f846a57ec8c0ec70fec2ac3edc59bd3 = L.marker(
+                [46.20338306, 6.14986229],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_36c3114a26af9760b53be7a783e1a16e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f846a57ec8c0ec70fec2ac3edc59bd3.setIcon(icon_36c3114a26af9760b53be7a783e1a16e);
+        
+    
+        var popup_ef11180c27ab21cc5e9057b943da073a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_216432c8b092b730bd185ad96ca967d6 = $(`<div id="html_216432c8b092b730bd185ad96ca967d6" style="width: 100.0%; height: 100.0%;"><b>Global Observatory on Health Research and Development (Observatório Global de Pesquisa e Desenvolvimento em Saúde)</b><br><a href='https://www.who.int/observatories/global-observatory-on-health-research-and-development' target='_blank'>https://www.who.int/observatories/global-observatory-on-health-research-and-development</a></div>`)[0];
+            popup_ef11180c27ab21cc5e9057b943da073a.setContent(html_216432c8b092b730bd185ad96ca967d6);
+        
+
+        marker_8f846a57ec8c0ec70fec2ac3edc59bd3.bindPopup(popup_ef11180c27ab21cc5e9057b943da073a)
+        ;
+
+        
+    
+    
+            var marker_db660e9f82cf2224a42899d8e14d6f01 = L.marker(
+                [46.20338306, 6.14986229],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_1ec26227f8315ae91d95e08fec529f47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db660e9f82cf2224a42899d8e14d6f01.setIcon(icon_1ec26227f8315ae91d95e08fec529f47);
+        
+    
+        var popup_a5580929b86a56556cc15ed716dce9b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d41c2804043880d9ff52827f79ad4253 = $(`<div id="html_d41c2804043880d9ff52827f79ad4253" style="width: 100.0%; height: 100.0%;"><b>Observatório Global de Demência (Global Dementia Observatory - GDO)</b><br><a href='https://www.who.int/data/gho/data/themes/global-dementia-observatory-gdo' target='_blank'>https://www.who.int/data/gho/data/themes/global-dementia-observatory-gdo</a></div>`)[0];
+            popup_a5580929b86a56556cc15ed716dce9b1.setContent(html_d41c2804043880d9ff52827f79ad4253);
+        
+
+        marker_db660e9f82cf2224a42899d8e14d6f01.bindPopup(popup_a5580929b86a56556cc15ed716dce9b1)
+        ;
+
+        
+    
+    
+            var marker_38b28c395ddb806a01e5b9810a21de84 = L.marker(
+                [51.50281948, -0.146241731],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_f8b695e3eca0dfdb983c0b440f6dc55b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38b28c395ddb806a01e5b9810a21de84.setIcon(icon_f8b695e3eca0dfdb983c0b440f6dc55b);
+        
+    
+        var popup_e31987e33dee2ea20c74c7c1e49afbcb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b0620db6d7f3f7894a9a84fbe177325 = $(`<div id="html_8b0620db6d7f3f7894a9a84fbe177325" style="width: 100.0%; height: 100.0%;"><b>Eastern Region Public Health Observatory (ERPHO)</b><br><a href='https://erpho.org.uk/' target='_blank'>https://erpho.org.uk/</a></div>`)[0];
+            popup_e31987e33dee2ea20c74c7c1e49afbcb.setContent(html_8b0620db6d7f3f7894a9a84fbe177325);
+        
+
+        marker_38b28c395ddb806a01e5b9810a21de84.bindPopup(popup_e31987e33dee2ea20c74c7c1e49afbcb)
+        ;
+
+        
+    
+    
+            var marker_b4a1f526548b0a226b201a673a638d07 = L.marker(
+                [55.95306901, -3.191542523],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_f5e314929b5b0814f2a6daf5848b892e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4a1f526548b0a226b201a673a638d07.setIcon(icon_f5e314929b5b0814f2a6daf5848b892e);
+        
+    
+        var popup_7a3ab2f2b7bc459a438abc49175ea7f8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_155b7368a47e92b4d759f35f285b60d9 = $(`<div id="html_155b7368a47e92b4d759f35f285b60d9" style="width: 100.0%; height: 100.0%;"><b>Scottish Public Health Observatory (ScotPHO).</b><br><a href='https://www.scotpho.org.uk/' target='_blank'>https://www.scotpho.org.uk/</a></div>`)[0];
+            popup_7a3ab2f2b7bc459a438abc49175ea7f8.setContent(html_155b7368a47e92b4d759f35f285b60d9);
+        
+
+        marker_b4a1f526548b0a226b201a673a638d07.bindPopup(popup_7a3ab2f2b7bc459a438abc49175ea7f8)
+        ;
+
+        
+    
+    
+            var marker_2c2edcae4174378c4e783d52abcf33e1 = L.marker(
+                [46.20338306, 6.14986229],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_cfa45b726fe913a7983df257d9c5ce7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2c2edcae4174378c4e783d52abcf33e1.setIcon(icon_cfa45b726fe913a7983df257d9c5ce7b);
+        
+    
+        var popup_b5b4d66cb632ba0c028960a5ae9ca044 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1337b6330c0bc669e631d9d369dc55f8 = $(`<div id="html_1337b6330c0bc669e631d9d369dc55f8" style="width: 100.0%; height: 100.0%;"><b>Portal Europeu de Informação em Saúde (European Health Information Gateway)</b><br><a href='https://gateway.euro.who.int/en/' target='_blank'>https://gateway.euro.who.int/en/</a></div>`)[0];
+            popup_b5b4d66cb632ba0c028960a5ae9ca044.setContent(html_1337b6330c0bc669e631d9d369dc55f8);
+        
+
+        marker_2c2edcae4174378c4e783d52abcf33e1.bindPopup(popup_b5b4d66cb632ba0c028960a5ae9ca044)
+        ;
+
+        
+    
+    
+            var marker_cdbe6a2f2cc1d50c694144242e73ca16 = L.marker(
+                [46.20338306, 6.14986229],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_6ff49b8f4d0e9471d1ecdfc584e1f506 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cdbe6a2f2cc1d50c694144242e73ca16.setIcon(icon_6ff49b8f4d0e9471d1ecdfc584e1f506);
+        
+    
+        var popup_7a87432efd8f7e5a77846a251f94b1aa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c609465b92e2360fb3a32693055a0a15 = $(`<div id="html_c609465b92e2360fb3a32693055a0a15" style="width: 100.0%; height: 100.0%;"><b>Observatório Europeu de Sistemas e Políticas de Saúde (European Observatory on Health Systems and Policies)</b><br><a href='https://eurohealthobservatory.who.int/' target='_blank'>https://eurohealthobservatory.who.int/</a></div>`)[0];
+            popup_7a87432efd8f7e5a77846a251f94b1aa.setContent(html_c609465b92e2360fb3a32693055a0a15);
+        
+
+        marker_cdbe6a2f2cc1d50c694144242e73ca16.bindPopup(popup_7a87432efd8f7e5a77846a251f94b1aa)
+        ;
+
+        
+    
+    
+            var marker_c326a88518e7d350b92b8ea3abb2a699 = L.marker(
+                [45.66047044, 13.79612915],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_b869a508d10f44556193be24a378d78e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c326a88518e7d350b92b8ea3abb2a699.setIcon(icon_b869a508d10f44556193be24a378d78e);
+        
+    
+        var popup_839ed820eb6ac8660782855429eda1c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_83dab6323832249252450e77ae954edb = $(`<div id="html_83dab6323832249252450e77ae954edb" style="width: 100.0%; height: 100.0%;"><b>Osservatorio Nazionale sulla Salute nelle Regioni Italiane.</b><br><a href='https://osservatoriosullasalute.it/' target='_blank'>https://osservatoriosullasalute.it/</a></div>`)[0];
+            popup_839ed820eb6ac8660782855429eda1c1.setContent(html_83dab6323832249252450e77ae954edb);
+        
+
+        marker_c326a88518e7d350b92b8ea3abb2a699.bindPopup(popup_839ed820eb6ac8660782855429eda1c1)
+        ;
+
+        
+    
+    
+            var marker_d5dd00b72a56f78e14b2d18eb61538c1 = L.marker(
+                [45.08205242, 7.575690484],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_e557f5bb91ad87b34ac6a33a63bfaf09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5dd00b72a56f78e14b2d18eb61538c1.setIcon(icon_e557f5bb91ad87b34ac6a33a63bfaf09);
+        
+    
+        var popup_fd74e9d17a9f42830d3f5e5e80522285 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_865cf3723636a7f8df73ab44e805e011 = $(`<div id="html_865cf3723636a7f8df73ab44e805e011" style="width: 100.0%; height: 100.0%;"><b>Osservatorio Epidemiologico delle Dipendenze (OED).</b><br><a href='https://www.oed.piemonte.it/' target='_blank'>https://www.oed.piemonte.it/</a></div>`)[0];
+            popup_fd74e9d17a9f42830d3f5e5e80522285.setContent(html_865cf3723636a7f8df73ab44e805e011);
+        
+
+        marker_d5dd00b72a56f78e14b2d18eb61538c1.bindPopup(popup_fd74e9d17a9f42830d3f5e5e80522285)
+        ;
+
+        
+    
+    
+            var marker_aa5283812e2d4e6fb8cf35d1df7204eb = L.marker(
+                [38.73789527, -9.153196377],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_edbaf84cd33fa7ae0efeca5e71fa4801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aa5283812e2d4e6fb8cf35d1df7204eb.setIcon(icon_edbaf84cd33fa7ae0efeca5e71fa4801);
+        
+    
+        var popup_5a4ad9b8afdbcef2053241aec8a6aa15 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf6fe721854fc3a73c816d3e9c8cb2c6 = $(`<div id="html_bf6fe721854fc3a73c816d3e9c8cb2c6" style="width: 100.0%; height: 100.0%;"><b>Observatório Português dos Sistemas de Saúde (OPSS).</b><br><a href='https://opss.pt/' target='_blank'>https://opss.pt/</a></div>`)[0];
+            popup_5a4ad9b8afdbcef2053241aec8a6aa15.setContent(html_bf6fe721854fc3a73c816d3e9c8cb2c6);
+        
+
+        marker_aa5283812e2d4e6fb8cf35d1df7204eb.bindPopup(popup_5a4ad9b8afdbcef2053241aec8a6aa15)
+        ;
+
+        
+    
+    
+            var marker_e1727b37b44f679c7b3fa8590b7cce2a = L.marker(
+                [38.73320535, -9.160834423],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_a7e841bb0dccb7f7437fc9c5428fb47e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1727b37b44f679c7b3fa8590b7cce2a.setIcon(icon_a7e841bb0dccb7f7437fc9c5428fb47e);
+        
+    
+        var popup_b908b392f3cd82f95da4ab9f27c08eee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea35d3e604d5058de5857b12ba53ec1d = $(`<div id="html_ea35d3e604d5058de5857b12ba53ec1d" style="width: 100.0%; height: 100.0%;"><b>Observatório para as Condições de Vida e Trabalho (OCVT)</b><br><a href='https://ocvt.unl.pt/pt/' target='_blank'>https://ocvt.unl.pt/pt/</a></div>`)[0];
+            popup_b908b392f3cd82f95da4ab9f27c08eee.setContent(html_ea35d3e604d5058de5857b12ba53ec1d);
+        
+
+        marker_e1727b37b44f679c7b3fa8590b7cce2a.bindPopup(popup_b908b392f3cd82f95da4ab9f27c08eee)
+        ;
+
+        
+    
+    
+            var marker_aeb2efd1e6f2fc8def80f40a1bbb8206 = L.marker(
+                [-12.9794322, -38.51624102],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_b72390aa1d90d8720da53169b4973b02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aeb2efd1e6f2fc8def80f40a1bbb8206.setIcon(icon_b72390aa1d90d8720da53169b4973b02);
+        
+    
+        var popup_6528026761bceb1e0371ff0f4525c972 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_901d7e2e28384e516f2f1db4fd52b89d = $(`<div id="html_901d7e2e28384e516f2f1db4fd52b89d" style="width: 100.0%; height: 100.0%;"><b>Observatório de Gestão do Trabalho e Educação na Saúde (Observatório de GTES).</b><br><a href='https://www.saude.ba.gov.br/educacao/sobreaespba/observatorio-de-gtes/' target='_blank'>https://www.saude.ba.gov.br/educacao/sobreaespba/observatorio-de-gtes/</a></div>`)[0];
+            popup_6528026761bceb1e0371ff0f4525c972.setContent(html_901d7e2e28384e516f2f1db4fd52b89d);
+        
+
+        marker_aeb2efd1e6f2fc8def80f40a1bbb8206.bindPopup(popup_6528026761bceb1e0371ff0f4525c972)
+        ;
+
+        
+    
+    
+            var marker_ee714fd617c8a35cfe02698f6c8559a4 = L.marker(
+                [-3.731381849, -38.51141021],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_3ebfcf5425b7b3f2b46e95ffd707da1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee714fd617c8a35cfe02698f6c8559a4.setIcon(icon_3ebfcf5425b7b3f2b46e95ffd707da1a);
+        
+    
+        var popup_125369b543ca16c44b5e9d1fc1d02da4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2ad720fdbe6d8d19fe95fd5cc5eb557 = $(`<div id="html_e2ad720fdbe6d8d19fe95fd5cc5eb557" style="width: 100.0%; height: 100.0%;"><b>Observatório de Políticas Públicas (OPP) da Universidade Federal do Ceará (UFC).</b><br><a href='https://oppce.ufc.br/pt/' target='_blank'>https://oppce.ufc.br/pt/</a></div>`)[0];
+            popup_125369b543ca16c44b5e9d1fc1d02da4.setContent(html_e2ad720fdbe6d8d19fe95fd5cc5eb557);
+        
+
+        marker_ee714fd617c8a35cfe02698f6c8559a4.bindPopup(popup_125369b543ca16c44b5e9d1fc1d02da4)
+        ;
+
+        
+    
+    
+            var marker_fd0d741a9f37944ca5eb3fb4011de6bd = L.marker(
+                [-10.25059239, -48.32070017],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ab3673415932c5264601b4cab8e9dba3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd0d741a9f37944ca5eb3fb4011de6bd.setIcon(icon_ab3673415932c5264601b4cab8e9dba3);
+        
+    
+        var popup_fa99fb7eb2263fae41e84286fad03118 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_958c623400422ecc26a52e461db324ec = $(`<div id="html_958c623400422ecc26a52e461db324ec" style="width: 100.0%; height: 100.0%;"><b>Observatório de Equidade, Desigualdades e Determinantes Sociais em Saúde do Tocantins - ODSS/TO</b><br><a href='https://www.to.gov.br/saude/observatorio-de-equidade-desigualdades-e-determinantes-sociais-em-saude-do-tocantins-odssto/78kvepzhvu57' target='_blank'>https://www.to.gov.br/saude/observatorio-de-equidade-desigualdades-e-determinantes-sociais-em-saude-do-tocantins-odssto/78kvepzhvu57</a></div>`)[0];
+            popup_fa99fb7eb2263fae41e84286fad03118.setContent(html_958c623400422ecc26a52e461db324ec);
+        
+
+        marker_fd0d741a9f37944ca5eb3fb4011de6bd.bindPopup(popup_fa99fb7eb2263fae41e84286fad03118)
+        ;
+
+        
+    
+    
+            var marker_1348884845c0be1ed8e1a5507f396c12 = L.marker(
+                [-22.91491458, -43.10478022],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_620d2a679ee0071867d4c3c2153eff4a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1348884845c0be1ed8e1a5507f396c12.setIcon(icon_620d2a679ee0071867d4c3c2153eff4a);
+        
+    
+        var popup_5bdd1e3045e671bbe6bbebf9c3461176 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94b5e4b2ad5b3041435361957989e115 = $(`<div id="html_94b5e4b2ad5b3041435361957989e115" style="width: 100.0%; height: 100.0%;"><b>Observatório de Políticas de Saúde no Estado do Rio de Janeiro.</b><br><a href='https://www.cosemsrj.org.br/observatorio-projeto/' target='_blank'>https://www.cosemsrj.org.br/observatorio-projeto/</a></div>`)[0];
+            popup_5bdd1e3045e671bbe6bbebf9c3461176.setContent(html_94b5e4b2ad5b3041435361957989e115);
+        
+
+        marker_1348884845c0be1ed8e1a5507f396c12.bindPopup(popup_5bdd1e3045e671bbe6bbebf9c3461176)
+        ;
+
+        
+    
+    
+            var marker_95531a331e2bbbc41889242fde6560a3 = L.marker(
+                [-5.783112152, -35.1926036],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ff2bd7f57e0d239d9177d19fdf247d8e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_95531a331e2bbbc41889242fde6560a3.setIcon(icon_ff2bd7f57e0d239d9177d19fdf247d8e);
+        
+    
+        var popup_babec57fbde1792dad1b821aa078bf14 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_08f90bf481e8712b0964f9a908bfa19d = $(`<div id="html_08f90bf481e8712b0964f9a908bfa19d" style="width: 100.0%; height: 100.0%;"><b>Observatório do Aedes Aegypti.</b><br><a href='https://observatoriodadengue.telessaude.ufrn.br/' target='_blank'>https://observatoriodadengue.telessaude.ufrn.br/</a></div>`)[0];
+            popup_babec57fbde1792dad1b821aa078bf14.setContent(html_08f90bf481e8712b0964f9a908bfa19d);
+        
+
+        marker_95531a331e2bbbc41889242fde6560a3.bindPopup(popup_babec57fbde1792dad1b821aa078bf14)
+        ;
+
+        
+    
+    
+            var marker_eece584690ab516abcac172761c3652c = L.marker(
+                [-5.783112152, -35.1926036],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_1c8b8145f83fdd292d43e7d98577be07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eece584690ab516abcac172761c3652c.setIcon(icon_1c8b8145f83fdd292d43e7d98577be07);
+        
+    
+        var popup_9b389bc018fe2784b982593dabbfcade = L.popup({"maxWidth": "100%"});
+
+        
+            var html_563a679cf64f0c06a7329b621bfcfcd3 = $(`<div id="html_563a679cf64f0c06a7329b621bfcfcd3" style="width: 100.0%; height: 100.0%;"><b>Observatório de Gestão Estratégica do Sistema Único de Saúde no Rio Grande do Norte (OGE-SUS-RN).</b><br><a href='http://www.adcon.rn.gov.br/ACERVO/sesap/DOC/DOC000000000308809.PDF' target='_blank'>http://www.adcon.rn.gov.br/ACERVO/sesap/DOC/DOC000000000308809.PDF</a></div>`)[0];
+            popup_9b389bc018fe2784b982593dabbfcade.setContent(html_563a679cf64f0c06a7329b621bfcfcd3);
+        
+
+        marker_eece584690ab516abcac172761c3652c.bindPopup(popup_9b389bc018fe2784b982593dabbfcade)
+        ;
+
+        
+    
+    
+            var marker_fd87a8446e933129839e6eb127325a50 = L.marker(
+                [-5.783112152, -35.1926036],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_b269e01f2319ad85829982973381bd77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd87a8446e933129839e6eb127325a50.setIcon(icon_b269e01f2319ad85829982973381bd77);
+        
+    
+        var popup_690637a2deffb3d16c092abea5bb7c39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aacc0e9f4820a4c259936827b58ca5bf = $(`<div id="html_aacc0e9f4820a4c259936827b58ca5bf" style="width: 100.0%; height: 100.0%;"><b>Observatório de Recursos Humanos em Saúde da Universidade Federal do Rio Grande do Norte (Observatório RH-UFRN).</b><br><a href='https://observatoriorh.ufrn.br/' target='_blank'>https://observatoriorh.ufrn.br/</a></div>`)[0];
+            popup_690637a2deffb3d16c092abea5bb7c39.setContent(html_aacc0e9f4820a4c259936827b58ca5bf);
+        
+
+        marker_fd87a8446e933129839e6eb127325a50.bindPopup(popup_690637a2deffb3d16c092abea5bb7c39)
+        ;
+
+        
+    
+    
+            var marker_c7fe992fa07ed7b695dc05145eea244b = L.marker(
+                [-30.03746791, -51.18225343],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_332fd5e11fafd88f6a4483536a6b4d7d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c7fe992fa07ed7b695dc05145eea244b.setIcon(icon_332fd5e11fafd88f6a4483536a6b4d7d);
+        
+    
+        var popup_f08a6283abb83a6184c5b09929bec626 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f66129185e71e1aaf6ab48946a84f21e = $(`<div id="html_f66129185e71e1aaf6ab48946a84f21e" style="width: 100.0%; height: 100.0%;"><b>Observatório de Direitos Humanos da Universidade Federal de Santa Maria </b><br><a href='https://www.ufsm.br/pro-reitorias/pre/observatorio-de-direitos-humanos' target='_blank'>https://www.ufsm.br/pro-reitorias/pre/observatorio-de-direitos-humanos</a></div>`)[0];
+            popup_f08a6283abb83a6184c5b09929bec626.setContent(html_f66129185e71e1aaf6ab48946a84f21e);
+        
+
+        marker_c7fe992fa07ed7b695dc05145eea244b.bindPopup(popup_f08a6283abb83a6184c5b09929bec626)
+        ;
+
+        
+    
+    
+            var marker_67aed263b2268a99cc93c8269bbc941f = L.marker(
+                [-30.03746791, -51.18225343],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_aef9d77590a3e4ad870ae58c95caabc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67aed263b2268a99cc93c8269bbc941f.setIcon(icon_aef9d77590a3e4ad870ae58c95caabc4);
+        
+    
+        var popup_a156a49f6beff67da17581ae1d7417d8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c7e1b0a51d275ad40e419ff1c7fabb4 = $(`<div id="html_3c7e1b0a51d275ad40e419ff1c7fabb4" style="width: 100.0%; height: 100.0%;"><b>Observatório de Informações em Saúde.</b><br><a href='https://www.ufsm.br/coronavirus/observatorio' target='_blank'>https://www.ufsm.br/coronavirus/observatorio</a></div>`)[0];
+            popup_a156a49f6beff67da17581ae1d7417d8.setContent(html_3c7e1b0a51d275ad40e419ff1c7fabb4);
+        
+
+        marker_67aed263b2268a99cc93c8269bbc941f.bindPopup(popup_a156a49f6beff67da17581ae1d7417d8)
+        ;
+
+        
+    
+    
+            var marker_9425a96e6ea2405f373a93f00376dc5e = L.marker(
+                [-19.92193121, -43.95783657],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_79a2cbdebf7f06c0b2799a3927a7de45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9425a96e6ea2405f373a93f00376dc5e.setIcon(icon_79a2cbdebf7f06c0b2799a3927a7de45);
+        
+    
+        var popup_fe525e48ff9b9caf819a5cf4a64a10b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa96403044c026e9ef9b212c1c6a4345 = $(`<div id="html_aa96403044c026e9ef9b212c1c6a4345" style="width: 100.0%; height: 100.0%;"><b>Observatório de Vigilância Genômica de Minas Gerais OVIGen </b><br><a href='https://www.saude.mg.gov.br/noticias-e-eventos/observatorio-de-vigilancia-genomica-de-minas-gerais-monitora-em-tempo-real-variantes-do-coronavirus-no-estado/' target='_blank'>https://www.saude.mg.gov.br/noticias-e-eventos/observatorio-de-vigilancia-genomica-de-minas-gerais-monitora-em-tempo-real-variantes-do-coronavirus-no-estado/</a></div>`)[0];
+            popup_fe525e48ff9b9caf819a5cf4a64a10b5.setContent(html_aa96403044c026e9ef9b212c1c6a4345);
+        
+
+        marker_9425a96e6ea2405f373a93f00376dc5e.bindPopup(popup_fe525e48ff9b9caf819a5cf4a64a10b5)
+        ;
+
+        
+    
+    
+            var marker_22c76cd1d934b27b39731ef56885b0bc = L.marker(
+                [-19.92193121, -43.95783657],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_f391cdaed7b9f635598fcaeeda4c7885 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22c76cd1d934b27b39731ef56885b0bc.setIcon(icon_f391cdaed7b9f635598fcaeeda4c7885);
+        
+    
+        var popup_b4df1a2e83bc2250b299d404621bdeb4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0d75785986f8596be66f047e2abfbf3a = $(`<div id="html_0d75785986f8596be66f047e2abfbf3a" style="width: 100.0%; height: 100.0%;"><b>Observatório de Ciência, Inovação e Tecnologia em Saúde (OCIT).</b><br><a href='https://www.gov.br/ebserh/pt-br/hospitais-universitarios/regiao-sudeste/hc-uftm/painel/gep/sgpits/sgpits/ocit' target='_blank'>https://www.gov.br/ebserh/pt-br/hospitais-universitarios/regiao-sudeste/hc-uftm/painel/gep/sgpits/sgpits/ocit</a></div>`)[0];
+            popup_b4df1a2e83bc2250b299d404621bdeb4.setContent(html_0d75785986f8596be66f047e2abfbf3a);
+        
+
+        marker_22c76cd1d934b27b39731ef56885b0bc.bindPopup(popup_b4df1a2e83bc2250b299d404621bdeb4)
+        ;
+
+        
+    
+    
+            var marker_d880ee0d7621723c976b13c74a6e3e62 = L.marker(
+                [-25.43409141, -49.26633459],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_c5538e9af6f55eb4982737f3c3e95c94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d880ee0d7621723c976b13c74a6e3e62.setIcon(icon_c5538e9af6f55eb4982737f3c3e95c94);
+        
+    
+        var popup_1e388e5134b634ed6399046d470da368 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc093bfaddcbb7d3a9e33fad659c398a = $(`<div id="html_bc093bfaddcbb7d3a9e33fad659c398a" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Coletiva do Litoral do Paraná</b><br><a href='https://litoral.ufpr.br/saudecoletiva/observatorio-de-saude/' target='_blank'>https://litoral.ufpr.br/saudecoletiva/observatorio-de-saude/</a></div>`)[0];
+            popup_1e388e5134b634ed6399046d470da368.setContent(html_bc093bfaddcbb7d3a9e33fad659c398a);
+        
+
+        marker_d880ee0d7621723c976b13c74a6e3e62.bindPopup(popup_1e388e5134b634ed6399046d470da368)
+        ;
+
+        
+    
+    
+            var marker_37ec8167cea91a5545447b0a5a5a5fb9 = L.marker(
+                [-25.43409141, -49.26633459],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_f7da8a55d4d1e36130504102b5204344 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_37ec8167cea91a5545447b0a5a5a5fb9.setIcon(icon_f7da8a55d4d1e36130504102b5204344);
+        
+    
+        var popup_6cfb325fff4d462568ac80508a115f83 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2045cda17c85b480301d2cecd3b36bc3 = $(`<div id="html_2045cda17c85b480301d2cecd3b36bc3" style="width: 100.0%; height: 100.0%;"><b>Observatório do Uso de Agrotóxicos e Consequências para a Saúde Humana e Ambiental no Paraná.</b><br><a href='https://saude.ufpr.br/observatorio/' target='_blank'>https://saude.ufpr.br/observatorio/</a></div>`)[0];
+            popup_6cfb325fff4d462568ac80508a115f83.setContent(html_2045cda17c85b480301d2cecd3b36bc3);
+        
+
+        marker_37ec8167cea91a5545447b0a5a5a5fb9.bindPopup(popup_6cfb325fff4d462568ac80508a115f83)
+        ;
+
+        
+    
+    
+            var marker_40f00911dd69919ac99e803d2dbebe32 = L.marker(
+                [-23.55577702, -46.5897686],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_9715056ce23b330d21ee4bb52ed12efe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40f00911dd69919ac99e803d2dbebe32.setIcon(icon_9715056ce23b330d21ee4bb52ed12efe);
+        
+    
+        var popup_4c6f848dac273af26483025de01122c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d3c0517325431789a0a72d749d0f06b = $(`<div id="html_4d3c0517325431789a0a72d749d0f06b" style="width: 100.0%; height: 100.0%;"><b>Observatório da Regionalização IEPS.</b><br><a href='https://ieps.org.br/observatorio-da-regionalizacao-divulga-diagnostico-dos-fluxos-regionais-de-sao-paulo/' target='_blank'>https://ieps.org.br/observatorio-da-regionalizacao-divulga-diagnostico-dos-fluxos-regionais-de-sao-paulo/</a></div>`)[0];
+            popup_4c6f848dac273af26483025de01122c8.setContent(html_4d3c0517325431789a0a72d749d0f06b);
+        
+
+        marker_40f00911dd69919ac99e803d2dbebe32.bindPopup(popup_4c6f848dac273af26483025de01122c8)
+        ;
+
+        
+    
+    
+            var marker_9207d835ab9dc44162784605aa370ad1 = L.marker(
+                [-23.55577702, -46.5897686],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_22e9ee607828200c1cadbb360c18c131 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9207d835ab9dc44162784605aa370ad1.setIcon(icon_22e9ee607828200c1cadbb360c18c131);
+        
+    
+        var popup_81f393d849a961072acd25bd3cec9be7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_95e83110d72660adeab8dac45212cc68 = $(`<div id="html_95e83110d72660adeab8dac45212cc68" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde da Região Metropolitana de São Paulo.​</b><br><a href='https://www.fsp.usp.br/observasaude/' target='_blank'>https://www.fsp.usp.br/observasaude/</a></div>`)[0];
+            popup_81f393d849a961072acd25bd3cec9be7.setContent(html_95e83110d72660adeab8dac45212cc68);
+        
+
+        marker_9207d835ab9dc44162784605aa370ad1.bindPopup(popup_81f393d849a961072acd25bd3cec9be7)
+        ;
+
+        
+    
+    
+            var marker_389220f52928e5ddd2f931ad180aa1ae = L.marker(
+                [-27.57944907, -48.50302656],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_f14e37bdfc4cb3100f9a3c14902d5d2f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_389220f52928e5ddd2f931ad180aa1ae.setIcon(icon_f14e37bdfc4cb3100f9a3c14902d5d2f);
+        
+    
+        var popup_3da5298f8a0358fa55421e8e5859fddf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2bf189266fcae16fe918cdccb3be4d78 = $(`<div id="html_2bf189266fcae16fe918cdccb3be4d78" style="width: 100.0%; height: 100.0%;"><b>Observatório Educação Física e Saúde Coletiva da Universidade do Estado de Santa Catarina (UDESC)</b><br><a href='https://www.udesc.br/educacaofisicaesaudecoletiva' target='_blank'>https://www.udesc.br/educacaofisicaesaudecoletiva</a></div>`)[0];
+            popup_3da5298f8a0358fa55421e8e5859fddf.setContent(html_2bf189266fcae16fe918cdccb3be4d78);
+        
+
+        marker_389220f52928e5ddd2f931ad180aa1ae.bindPopup(popup_3da5298f8a0358fa55421e8e5859fddf)
+        ;
+
+        
+    
+    
+            var marker_703aced7e87102d433e70c35e85066ef = L.marker(
+                [-16.6844, -49.27247501],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_0bca2fa4594bf4540b9513c1b5b4255b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_703aced7e87102d433e70c35e85066ef.setIcon(icon_0bca2fa4594bf4540b9513c1b5b4255b);
+        
+    
+        var popup_17fb9d77a29371cd8b22d4e66c114592 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fb9548d55bb62f22302a5afdfb87fe4 = $(`<div id="html_8fb9548d55bb62f22302a5afdfb87fe4" style="width: 100.0%; height: 100.0%;"><b>Observatório IpEPS - Inovar para a Educação Permanente em Saúde - Superintendência da Escola de Saúde do Estado de Goiás (SES/GO)</b><br><a href='https://goias.gov.br/escoladesaude/observatorio-ipeps/' target='_blank'>https://goias.gov.br/escoladesaude/observatorio-ipeps/</a></div>`)[0];
+            popup_17fb9d77a29371cd8b22d4e66c114592.setContent(html_8fb9548d55bb62f22302a5afdfb87fe4);
+        
+
+        marker_703aced7e87102d433e70c35e85066ef.bindPopup(popup_17fb9d77a29371cd8b22d4e66c114592)
+        ;
+
+        
+    
+    
+            var marker_56a4acbb501f25cfa7bb8fc9f89a2b88 = L.marker(
+                [-19.86974451, -43.96761343],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ac2847b9a26ad571fe5185a2115abbdb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_56a4acbb501f25cfa7bb8fc9f89a2b88.setIcon(icon_ac2847b9a26ad571fe5185a2115abbdb);
+        
+    
+        var popup_6d28c7849eb2b0797ac49273f0b13154 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f798fe49701f09a8addae5c0ff27a1b2 = $(`<div id="html_f798fe49701f09a8addae5c0ff27a1b2" style="width: 100.0%; height: 100.0%;"><b>Observatório da Saúde da Criança e do Adolescente (ObservaPED)</b><br><a href='https://www.medicina.ufmg.br/observaped/' target='_blank'>https://www.medicina.ufmg.br/observaped/</a></div>`)[0];
+            popup_6d28c7849eb2b0797ac49273f0b13154.setContent(html_f798fe49701f09a8addae5c0ff27a1b2);
+        
+
+        marker_56a4acbb501f25cfa7bb8fc9f89a2b88.bindPopup(popup_6d28c7849eb2b0797ac49273f0b13154)
+        ;
+
+        
+    
+    
+            var marker_e9b2a7f604e420d236996392f8d90c2e = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_c6f0339386eb3f5700f78bf09ff3e642 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9b2a7f604e420d236996392f8d90c2e.setIcon(icon_c6f0339386eb3f5700f78bf09ff3e642);
+        
+    
+        var popup_a2f8bff483e84074d770a15e2f82dcd7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4262e2d557507d841c3725e698f230d2 = $(`<div id="html_4262e2d557507d841c3725e698f230d2" style="width: 100.0%; height: 100.0%;"><b>Observatório Juventude, Ciência & Tecnologia (OJC&T). ​</b><br><a href='https://www.juventudect.epsjv.fiocruz.br/' target='_blank'>https://www.juventudect.epsjv.fiocruz.br/</a></div>`)[0];
+            popup_a2f8bff483e84074d770a15e2f82dcd7.setContent(html_4262e2d557507d841c3725e698f230d2);
+        
+
+        marker_e9b2a7f604e420d236996392f8d90c2e.bindPopup(popup_a2f8bff483e84074d770a15e2f82dcd7)
+        ;
+
+        
+    
+    
+            var marker_e56573270052b1273798daf6a12307fb = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_a2d7ed6838b327b08fd1a57bb0befd83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e56573270052b1273798daf6a12307fb.setIcon(icon_a2d7ed6838b327b08fd1a57bb0befd83);
+        
+    
+        var popup_54584ee45b702da03d2d1966bbcd5f42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1842c044ed9b2d7269ba0062d2ca844d = $(`<div id="html_1842c044ed9b2d7269ba0062d2ca844d" style="width: 100.0%; height: 100.0%;"><b>Observatório dos Técnicos em Saúde (OTS)</b><br><a href='https://www.observatorio.epsjv.fiocruz.br/' target='_blank'>https://www.observatorio.epsjv.fiocruz.br/</a></div>`)[0];
+            popup_54584ee45b702da03d2d1966bbcd5f42.setContent(html_1842c044ed9b2d7269ba0062d2ca844d);
+        
+
+        marker_e56573270052b1273798daf6a12307fb.bindPopup(popup_54584ee45b702da03d2d1966bbcd5f42)
+        ;
+
+        
+    
+    
+            var marker_614d3db7f7e732e190a90610998b8787 = L.marker(
+                [-15.79655338, -47.88775776],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_73f9a5fc8984a44ca6b17466ccfb1acd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_614d3db7f7e732e190a90610998b8787.setIcon(icon_73f9a5fc8984a44ca6b17466ccfb1acd);
+        
+    
+        var popup_11a5bfed43eccb34c02f1f71ffea4b72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_99d52a00d090d44e78edafc22353fe51 = $(`<div id="html_99d52a00d090d44e78edafc22353fe51" style="width: 100.0%; height: 100.0%;"><b>Observatório Nacional de Saúde do Trabalhador.​ MS</b><br><a href='https://bvsms.saude.gov.br/bvs/folder/10006002920.pdf' target='_blank'>https://bvsms.saude.gov.br/bvs/folder/10006002920.pdf</a></div>`)[0];
+            popup_11a5bfed43eccb34c02f1f71ffea4b72.setContent(html_99d52a00d090d44e78edafc22353fe51);
+        
+
+        marker_614d3db7f7e732e190a90610998b8787.bindPopup(popup_11a5bfed43eccb34c02f1f71ffea4b72)
+        ;
+
+        
+    
+    
+            var marker_32c44ef9443658fde5488c7bcd618337 = L.marker(
+                [-15.79655338, -47.88775776],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_c975db430ddc22caa629eaf9be7fffa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32c44ef9443658fde5488c7bcd618337.setIcon(icon_c975db430ddc22caa629eaf9be7fffa8);
+        
+    
+        var popup_85496f1f6f24cd96265f884de29f3b80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2d3f0bd8c27b939cf569c639abc1d0e0 = $(`<div id="html_2d3f0bd8c27b939cf569c639abc1d0e0" style="width: 100.0%; height: 100.0%;"><b>Observatório História e Saúde (OHS).</b><br><a href='https://ohs.coc.fiocruz.br/' target='_blank'>https://ohs.coc.fiocruz.br/</a></div>`)[0];
+            popup_85496f1f6f24cd96265f884de29f3b80.setContent(html_2d3f0bd8c27b939cf569c639abc1d0e0);
+        
+
+        marker_32c44ef9443658fde5488c7bcd618337.bindPopup(popup_85496f1f6f24cd96265f884de29f3b80)
+        ;
+
+        
+    
+    
+            var marker_80e70ee6e958f86cd0550f1ece9e0729 = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_4c31e70693b1bba58ca125f910c7c211 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_80e70ee6e958f86cd0550f1ece9e0729.setIcon(icon_4c31e70693b1bba58ca125f910c7c211);
+        
+    
+        var popup_740f0ab1c0ebe06ac7cf6f1890fabf32 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ccc9e1c447bbb62bb3b24bef4edc5607 = $(`<div id="html_ccc9e1c447bbb62bb3b24bef4edc5607" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Coletiva NESP-UNB </b><br><a href='https://nesp.unb.br/observatorios/#' target='_blank'>https://nesp.unb.br/observatorios/#</a></div>`)[0];
+            popup_740f0ab1c0ebe06ac7cf6f1890fabf32.setContent(html_ccc9e1c447bbb62bb3b24bef4edc5607);
+        
+
+        marker_80e70ee6e958f86cd0550f1ece9e0729.bindPopup(popup_740f0ab1c0ebe06ac7cf6f1890fabf32)
+        ;
+
+        
+    
+    
+            var marker_2687bf37022b85f0379538a138e5de41 = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ab84b692bdadfbe994e8af5bd95bebfd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2687bf37022b85f0379538a138e5de41.setIcon(icon_ab84b692bdadfbe994e8af5bd95bebfd);
+        
+    
+        var popup_2f2f6ba071f55d6fa4abae51ef624783 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cb2ffd7bba1022c05675cfeb38a0e7f = $(`<div id="html_3cb2ffd7bba1022c05675cfeb38a0e7f" style="width: 100.0%; height: 100.0%;"><b>Observatório Saúde na Mídia (OSM).</b><br><a href='https://www.icict.fiocruz.br/content/observatorio-saude-na-midia' target='_blank'>https://www.icict.fiocruz.br/content/observatorio-saude-na-midia</a></div>`)[0];
+            popup_2f2f6ba071f55d6fa4abae51ef624783.setContent(html_3cb2ffd7bba1022c05675cfeb38a0e7f);
+        
+
+        marker_2687bf37022b85f0379538a138e5de41.bindPopup(popup_2f2f6ba071f55d6fa4abae51ef624783)
+        ;
+
+        
+    
+    
+            var marker_6e045fa5129b4e1ab8b1d10f00b04c47 = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_d64b2176553f5d9ecaff6ca8c1da2123 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e045fa5129b4e1ab8b1d10f00b04c47.setIcon(icon_d64b2176553f5d9ecaff6ca8c1da2123);
+        
+    
+        var popup_3292d04f5e36f1c9c30f70dd0321b1bd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e156ce42542b5052a2c1f43ac5bbc34 = $(`<div id="html_4e156ce42542b5052a2c1f43ac5bbc34" style="width: 100.0%; height: 100.0%;"><b>Observatório de Clima e Saúde FIOCRUZ</b><br><a href='https://climaesaude.icict.fiocruz.br/' target='_blank'>https://climaesaude.icict.fiocruz.br/</a></div>`)[0];
+            popup_3292d04f5e36f1c9c30f70dd0321b1bd.setContent(html_4e156ce42542b5052a2c1f43ac5bbc34);
+        
+
+        marker_6e045fa5129b4e1ab8b1d10f00b04c47.bindPopup(popup_3292d04f5e36f1c9c30f70dd0321b1bd)
+        ;
+
+        
+    
+    
+            var marker_4cc1e5785568901f0b015d1437a0c4a9 = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_15662b238b19b6f5a1ccba997e8c7460 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4cc1e5785568901f0b015d1437a0c4a9.setIcon(icon_15662b238b19b6f5a1ccba997e8c7460);
+        
+    
+        var popup_d37372793fe64e30490b50088788596d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_32a9ca2fc74311a76e1f9318550c0c53 = $(`<div id="html_32a9ca2fc74311a76e1f9318550c0c53" style="width: 100.0%; height: 100.0%;"><b>Observatório da Política Nacional de Saúde Integral das Populações do Campo, da Floresta e das Águas (Obteia) NESP-UNB </b><br><a href='https://nesp.unb.br/observatorios/#' target='_blank'>https://nesp.unb.br/observatorios/#</a></div>`)[0];
+            popup_d37372793fe64e30490b50088788596d.setContent(html_32a9ca2fc74311a76e1f9318550c0c53);
+        
+
+        marker_4cc1e5785568901f0b015d1437a0c4a9.bindPopup(popup_d37372793fe64e30490b50088788596d)
+        ;
+
+        
+    
+    
+            var marker_ce4c7f017100c81061e0f54857151b74 = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_4b10ceccfe5574bcb252c1a31f50b4f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce4c7f017100c81061e0f54857151b74.setIcon(icon_4b10ceccfe5574bcb252c1a31f50b4f6);
+        
+    
+        var popup_f1473ae8881277efaa10eea66bd4a1e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7110d4e046e4f3421d5db4ef3cf22939 = $(`<div id="html_7110d4e046e4f3421d5db4ef3cf22939" style="width: 100.0%; height: 100.0%;"><b>Observatório da Saúde LGBT - NESP UNB</b><br><a href='https://www.nesp.unb.br/index.php/44-fixos/238-observatorio-saude-lgbt' target='_blank'>https://www.nesp.unb.br/index.php/44-fixos/238-observatorio-saude-lgbt</a></div>`)[0];
+            popup_f1473ae8881277efaa10eea66bd4a1e9.setContent(html_7110d4e046e4f3421d5db4ef3cf22939);
+        
+
+        marker_ce4c7f017100c81061e0f54857151b74.bindPopup(popup_f1473ae8881277efaa10eea66bd4a1e9)
+        ;
+
+        
+    
+    
+            var marker_967ea9411900c6d07189e91c7198fbdd = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_6d91d86c594a003f040d3f94f87697f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_967ea9411900c6d07189e91c7198fbdd.setIcon(icon_6d91d86c594a003f040d3f94f87697f9);
+        
+    
+        var popup_d018342e63515ea3f3ba8ffba8fab853 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a8dbfea3bf291806a4a7b57ee73236e = $(`<div id="html_8a8dbfea3bf291806a4a7b57ee73236e" style="width: 100.0%; height: 100.0%;"><b>Observatório sobre Iniquidades em Saúde.</b><br><a href='https://dssbr.ensp.fiocruz.br/observatorio-dss/#:~:text=O%20Observat%C3%B3rio%20sobre%20Iniquidades%20em,do%20pa%C3%ADs%20e%20regi%C3%B5es%20metropolitanas.' target='_blank'>https://dssbr.ensp.fiocruz.br/observatorio-dss/#:~:text=O%20Observat%C3%B3rio%20sobre%20Iniquidades%20em,do%20pa%C3%ADs%20e%20regi%C3%B5es%20metropolitanas.</a></div>`)[0];
+            popup_d018342e63515ea3f3ba8ffba8fab853.setContent(html_8a8dbfea3bf291806a4a7b57ee73236e);
+        
+
+        marker_967ea9411900c6d07189e91c7198fbdd.bindPopup(popup_d018342e63515ea3f3ba8ffba8fab853)
+        ;
+
+        
+    
+    
+            var marker_bb5e0f91bd9d3235ccff101f0018543b = L.marker(
+                [-5.839464204, -35.20104502],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_410c4f1d5bbbaab9d50f06e8b49bd7fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bb5e0f91bd9d3235ccff101f0018543b.setIcon(icon_410c4f1d5bbbaab9d50f06e8b49bd7fb);
+        
+    
+        var popup_7b205819882cfc1fe1ad5d3269248fd8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cf5985207b8ab023e97bde989e9beb1 = $(`<div id="html_6cf5985207b8ab023e97bde989e9beb1" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Mental da Universidade Federal do Rio Grande do Norte (OBSAM-UFRN).</b><br><a href='https://obsam.ufrn.br/' target='_blank'>https://obsam.ufrn.br/</a></div>`)[0];
+            popup_7b205819882cfc1fe1ad5d3269248fd8.setContent(html_6cf5985207b8ab023e97bde989e9beb1);
+        
+
+        marker_bb5e0f91bd9d3235ccff101f0018543b.bindPopup(popup_7b205819882cfc1fe1ad5d3269248fd8)
+        ;
+
+        
+    
+    
+            var marker_444acfeba59af539172b42f4ea7bc4c1 = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_afcd5dd3f2851cb6ab01e423c11f5249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_444acfeba59af539172b42f4ea7bc4c1.setIcon(icon_afcd5dd3f2851cb6ab01e423c11f5249);
+        
+    
+        var popup_78fa96872970606cd1ec78b942d5d472 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b03f20fe3522073fffa103c659588c7a = $(`<div id="html_b03f20fe3522073fffa103c659588c7a" style="width: 100.0%; height: 100.0%;"><b>Observatório Tuberculose Brasil FIOCRUZ</b><br><a href='https://mapamovsaude.net.br/index.php/Observat%C3%B3rio_Tuberculose_Brasil' target='_blank'>https://mapamovsaude.net.br/index.php/Observat%C3%B3rio_Tuberculose_Brasil</a></div>`)[0];
+            popup_78fa96872970606cd1ec78b942d5d472.setContent(html_b03f20fe3522073fffa103c659588c7a);
+        
+
+        marker_444acfeba59af539172b42f4ea7bc4c1.bindPopup(popup_78fa96872970606cd1ec78b942d5d472)
+        ;
+
+        
+    
+    
+            var marker_2a5ad4d831df3e37e87458011e208112 = L.marker(
+                [-23.54824455, -46.59531027],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_9c217249733290a282dc28fd25820718 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a5ad4d831df3e37e87458011e208112.setIcon(icon_9c217249733290a282dc28fd25820718);
+        
+    
+        var popup_8bb435288bfed6a2406539bdd0516662 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01412a4b1576af78668376b5c247aee9 = $(`<div id="html_01412a4b1576af78668376b5c247aee9" style="width: 100.0%; height: 100.0%;"><b>Observatório das Águas (OGA)</b><br><a href='https://observatoriodasaguas.org.br/' target='_blank'>https://observatoriodasaguas.org.br/</a></div>`)[0];
+            popup_8bb435288bfed6a2406539bdd0516662.setContent(html_01412a4b1576af78668376b5c247aee9);
+        
+
+        marker_2a5ad4d831df3e37e87458011e208112.bindPopup(popup_8bb435288bfed6a2406539bdd0516662)
+        ;
+
+        
+    
+    
+            var marker_1c9646ab2fe23b60215c496b47527467 = L.marker(
+                [-12.98994695, -38.51486796],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_d0ca3daea64df205c806f971691db984 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c9646ab2fe23b60215c496b47527467.setIcon(icon_d0ca3daea64df205c806f971691db984);
+        
+    
+        var popup_c5bfba147ab44f548d2b7f431c7afacb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_013886b23e21515f2673eb907593a7b7 = $(`<div id="html_013886b23e21515f2673eb907593a7b7" style="width: 100.0%; height: 100.0%;"><b>Observatório de Análise Política em Saúde (OAPS).</b><br><a href='https://analisepoliticaemsaude.org/' target='_blank'>https://analisepoliticaemsaude.org/</a></div>`)[0];
+            popup_c5bfba147ab44f548d2b7f431c7afacb.setContent(html_013886b23e21515f2673eb907593a7b7);
+        
+
+        marker_1c9646ab2fe23b60215c496b47527467.bindPopup(popup_c5bfba147ab44f548d2b7f431c7afacb)
+        ;
+
+        
+    
+    
+            var marker_35a7fedf3f32758c5ad10501be9c6ada = L.marker(
+                [-22.95071969, -43.17321144],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_e2fa68650246de084db83a59b1924052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35a7fedf3f32758c5ad10501be9c6ada.setIcon(icon_e2fa68650246de084db83a59b1924052);
+        
+    
+        var popup_85d711cdb9e2b68db7a24b1c73d6f2e6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a3a54c2acc39dc769805c8c52561e02 = $(`<div id="html_0a3a54c2acc39dc769805c8c52561e02" style="width: 100.0%; height: 100.0%;"><b>Observatório de Políticas e Cuidado em Saúde da UNIRIO</b><br><a href='https://www.unirio.br/news/observatorio-de-politicas-e-cuidado-em-saude-e-inaugurado-na-unirio' target='_blank'>https://www.unirio.br/news/observatorio-de-politicas-e-cuidado-em-saude-e-inaugurado-na-unirio</a></div>`)[0];
+            popup_85d711cdb9e2b68db7a24b1c73d6f2e6.setContent(html_0a3a54c2acc39dc769805c8c52561e02);
+        
+
+        marker_35a7fedf3f32758c5ad10501be9c6ada.bindPopup(popup_85d711cdb9e2b68db7a24b1c73d6f2e6)
+        ;
+
+        
+    
+    
+            var marker_8c221c8e74b454472b6538f874be06fa = L.marker(
+                [-15.79457229, -47.88775811],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_06cbb3c7f8e109b5fb3c0986c54b76d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c221c8e74b454472b6538f874be06fa.setIcon(icon_06cbb3c7f8e109b5fb3c0986c54b76d5);
+        
+    
+        var popup_6f2188024ab8e6a4b2d923b2ac88e258 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d4dc8b8df7f1eb4855c7306acb84818 = $(`<div id="html_5d4dc8b8df7f1eb4855c7306acb84818" style="width: 100.0%; height: 100.0%;"><b>Rede - Observatório do Programa Mais Médicos – OTICS</b><br><a href='http://www.otics.org.br/estacoes-de-observacao/observatorio-mais-medicos/' target='_blank'>http://www.otics.org.br/estacoes-de-observacao/observatorio-mais-medicos/</a></div>`)[0];
+            popup_6f2188024ab8e6a4b2d923b2ac88e258.setContent(html_5d4dc8b8df7f1eb4855c7306acb84818);
+        
+
+        marker_8c221c8e74b454472b6538f874be06fa.bindPopup(popup_6f2188024ab8e6a4b2d923b2ac88e258)
+        ;
+
+        
+    
+    
+            var marker_614114730b0d0d4ec3dd81736eec1d38 = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_2694c0e6da7faabf5702acb94607e345 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_614114730b0d0d4ec3dd81736eec1d38.setIcon(icon_2694c0e6da7faabf5702acb94607e345);
+        
+    
+        var popup_d519afe82269eac840ff6014d64f52fd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f12793e62b96effff2a52bc6d09bd3a4 = $(`<div id="html_f12793e62b96effff2a52bc6d09bd3a4" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Indígena NESP UNB</b><br><a href='https://nesp.unb.br/observatorios/#:~:text=O%20Observat%C3%B3rio%20ter%C3%A1%20como%20foco,Sa%C3%BAde%20Ind%C3%ADgena%20%E2%80%93%20SESAI%2FMS.' target='_blank'>https://nesp.unb.br/observatorios/#:~:text=O%20Observat%C3%B3rio%20ter%C3%A1%20como%20foco,Sa%C3%BAde%20Ind%C3%ADgena%20%E2%80%93%20SESAI%2FMS.</a></div>`)[0];
+            popup_d519afe82269eac840ff6014d64f52fd.setContent(html_f12793e62b96effff2a52bc6d09bd3a4);
+        
+
+        marker_614114730b0d0d4ec3dd81736eec1d38.bindPopup(popup_d519afe82269eac840ff6014d64f52fd)
+        ;
+
+        
+    
+    
+            var marker_ef87c7f34efb789afd602dbc2de1e9ed = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_045e61a596cb47e7dda05013c182c2ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef87c7f34efb789afd602dbc2de1e9ed.setIcon(icon_045e61a596cb47e7dda05013c182c2ab);
+        
+    
+        var popup_fba859eb9df8ce7472ffe136afff92cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91f6a463500a3d1f3f640b2af39889c7 = $(`<div id="html_91f6a463500a3d1f3f640b2af39889c7" style="width: 100.0%; height: 100.0%;"><b>Observatório em Ciência, Tecnologia e Inovação em Saúde da Fiocruz.</b><br><a href='https://observatorio.fiocruz.br/' target='_blank'>https://observatorio.fiocruz.br/</a></div>`)[0];
+            popup_fba859eb9df8ce7472ffe136afff92cb.setContent(html_91f6a463500a3d1f3f640b2af39889c7);
+        
+
+        marker_ef87c7f34efb789afd602dbc2de1e9ed.bindPopup(popup_fba859eb9df8ce7472ffe136afff92cb)
+        ;
+
+        
+    
+    
+            var marker_32357421a1bfa103ba522b2fab1faadf = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_28bc03143650f18b124826bfc57a3bf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_32357421a1bfa103ba522b2fab1faadf.setIcon(icon_28bc03143650f18b124826bfc57a3bf9);
+        
+    
+        var popup_52cfa36d3a47b9be2863af496912c168 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dcd22cce9c14417add5e5d4042b0476e = $(`<div id="html_dcd22cce9c14417add5e5d4042b0476e" style="width: 100.0%; height: 100.0%;"><b>Observatório da Medicina (ObMed).</b><br><a href='https://observatoriodamedicina.ensp.fiocruz.br/' target='_blank'>https://observatoriodamedicina.ensp.fiocruz.br/</a></div>`)[0];
+            popup_52cfa36d3a47b9be2863af496912c168.setContent(html_dcd22cce9c14417add5e5d4042b0476e);
+        
+
+        marker_32357421a1bfa103ba522b2fab1faadf.bindPopup(popup_52cfa36d3a47b9be2863af496912c168)
+        ;
+
+        
+    
+    
+            var marker_c5b411b4fc668e79183d8a05a4e8f02e = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_a60546d1e50463fbd407a96946aecf70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5b411b4fc668e79183d8a05a4e8f02e.setIcon(icon_a60546d1e50463fbd407a96946aecf70);
+        
+    
+        var popup_08d54c8a4432065b93caf4fe10af0479 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_75ecbfd49a839a9c0ae32075d4d96c79 = $(`<div id="html_75ecbfd49a839a9c0ae32075d4d96c79" style="width: 100.0%; height: 100.0%;"><b>Observatório Nacional de Saberes e Práticas Tradicionais, Integrativas e Complementares em Saúde (ObservaPICS).</b><br><a href='https://observapics.fiocruz.br/sobre/' target='_blank'>https://observapics.fiocruz.br/sobre/</a></div>`)[0];
+            popup_08d54c8a4432065b93caf4fe10af0479.setContent(html_75ecbfd49a839a9c0ae32075d4d96c79);
+        
+
+        marker_c5b411b4fc668e79183d8a05a4e8f02e.bindPopup(popup_08d54c8a4432065b93caf4fe10af0479)
+        ;
+
+        
+    
+    
+            var marker_e2e9ff87517c719cd4a59eee49e0107a = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ef800093c1f0b39f69a13b17f58c5977 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2e9ff87517c719cd4a59eee49e0107a.setIcon(icon_ef800093c1f0b39f69a13b17f58c5977);
+        
+    
+        var popup_f34916e95e97adb2e02f8234e3ddd124 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_27529e659e0b69ef982d27ff78122b0c = $(`<div id="html_27529e659e0b69ef982d27ff78122b0c" style="width: 100.0%; height: 100.0%;"><b>Observatório de Política e Gestão Hospitalar (OPGH) FIOCRUZ</b><br><a href='https://www.observatoriohospitalar.fiocruz.br' target='_blank'>https://www.observatoriohospitalar.fiocruz.br</a></div>`)[0];
+            popup_f34916e95e97adb2e02f8234e3ddd124.setContent(html_27529e659e0b69ef982d27ff78122b0c);
+        
+
+        marker_e2e9ff87517c719cd4a59eee49e0107a.bindPopup(popup_f34916e95e97adb2e02f8234e3ddd124)
+        ;
+
+        
+    
+    
+            var marker_2016507ffb26e2431dd82465b5c5c950 = L.marker(
+                [-15.79457229, -47.88775811],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_3fc72b9ae25fc9ee526b339935d1e112 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2016507ffb26e2431dd82465b5c5c950.setIcon(icon_3fc72b9ae25fc9ee526b339935d1e112);
+        
+    
+        var popup_ccde4fe914e7c96907918949293b53f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30c83e20be3fdfdf1cea896dc55fa45b = $(`<div id="html_30c83e20be3fdfdf1cea896dc55fa45b" style="width: 100.0%; height: 100.0%;"><b>Observatório de Pesquisas Científicas com Seres Humanos Registradas na Plataforma Brasil</b><br><a href='https://observatoriopb.cienciasus.gov.br/' target='_blank'>https://observatoriopb.cienciasus.gov.br/</a></div>`)[0];
+            popup_ccde4fe914e7c96907918949293b53f1.setContent(html_30c83e20be3fdfdf1cea896dc55fa45b);
+        
+
+        marker_2016507ffb26e2431dd82465b5c5c950.bindPopup(popup_ccde4fe914e7c96907918949293b53f1)
+        ;
+
+        
+    
+    
+            var marker_ba900c88a28c93715e6329354007b72d = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_44afa2d28eb9a210e9bdf1743e725e45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba900c88a28c93715e6329354007b72d.setIcon(icon_44afa2d28eb9a210e9bdf1743e725e45);
+        
+    
+        var popup_019e4fb468d07496f01400e5ef928878 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4f3ea992c81aa59912e84d740a328b7b = $(`<div id="html_4f3ea992c81aa59912e84d740a328b7b" style="width: 100.0%; height: 100.0%;"><b>Observatório Covid-19 Fiocruz</b><br><a href='https://portal.fiocruz.br/observatorio-covid-19' target='_blank'>https://portal.fiocruz.br/observatorio-covid-19</a></div>`)[0];
+            popup_019e4fb468d07496f01400e5ef928878.setContent(html_4f3ea992c81aa59912e84d740a328b7b);
+        
+
+        marker_ba900c88a28c93715e6329354007b72d.bindPopup(popup_019e4fb468d07496f01400e5ef928878)
+        ;
+
+        
+    
+    
+            var marker_470c150876df61fd45ca303d75319933 = L.marker(
+                [-19.848213, -43.98472723],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_fcd7d0e83fab1a7e4c3b16a9ed9d5acb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_470c150876df61fd45ca303d75319933.setIcon(icon_fcd7d0e83fab1a7e4c3b16a9ed9d5acb);
+        
+    
+        var popup_a18940d8de84708b16c37b545145580d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ce2930d74aeeabf79e0dc5389439272 = $(`<div id="html_4ce2930d74aeeabf79e0dc5389439272" style="width: 100.0%; height: 100.0%;"><b>Observatório Brasileiro de Políticas Públicas com a População em Situação de Rua.</b><br><a href='https://obpoprua.direito.ufmg.br/' target='_blank'>https://obpoprua.direito.ufmg.br/</a></div>`)[0];
+            popup_a18940d8de84708b16c37b545145580d.setContent(html_4ce2930d74aeeabf79e0dc5389439272);
+        
+
+        marker_470c150876df61fd45ca303d75319933.bindPopup(popup_a18940d8de84708b16c37b545145580d)
+        ;
+
+        
+    
+    
+            var marker_4949b56f97ea2ae3b3cdbe6068b517ee = L.marker(
+                [-23.58466261, -46.67091034],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_b2e235c1dcd79210821849e5b2a8f344 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4949b56f97ea2ae3b3cdbe6068b517ee.setIcon(icon_b2e235c1dcd79210821849e5b2a8f344);
+        
+    
+        var popup_d743fadbd8bc94011495224e5aae82c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9566f1c22ac2a0eefab408c27325c7c2 = $(`<div id="html_9566f1c22ac2a0eefab408c27325c7c2" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Pública UMANE</b><br><a href='https://observatoriosaudepublica.com.br/.' target='_blank'>https://observatoriosaudepublica.com.br/.</a></div>`)[0];
+            popup_d743fadbd8bc94011495224e5aae82c8.setContent(html_9566f1c22ac2a0eefab408c27325c7c2);
+        
+
+        marker_4949b56f97ea2ae3b3cdbe6068b517ee.bindPopup(popup_d743fadbd8bc94011495224e5aae82c8)
+        ;
+
+        
+    
+    
+            var marker_124272dd313704d9f1af3ccbb6cf9d43 = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ca86ef2cbf4a4ed48e9d61e87c88f012 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_124272dd313704d9f1af3ccbb6cf9d43.setIcon(icon_ca86ef2cbf4a4ed48e9d61e87c88f012);
+        
+    
+        var popup_74e922aafa7bb0490e05e7f125ac7b8d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_35831f97acbbc2fbec4988af21391abb = $(`<div id="html_35831f97acbbc2fbec4988af21391abb" style="width: 100.0%; height: 100.0%;"><b>Observa Infância FIOCRUZ</b><br><a href='https://observainfancia.icict.fiocruz.br/' target='_blank'>https://observainfancia.icict.fiocruz.br/</a></div>`)[0];
+            popup_74e922aafa7bb0490e05e7f125ac7b8d.setContent(html_35831f97acbbc2fbec4988af21391abb);
+        
+
+        marker_124272dd313704d9f1af3ccbb6cf9d43.bindPopup(popup_74e922aafa7bb0490e05e7f125ac7b8d)
+        ;
+
+        
+    
+    
+            var marker_38cdcf72544e444e4a6f4d5cab79cb34 = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ebfbffae0a21699a1ee8dddfaf8790a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_38cdcf72544e444e4a6f4d5cab79cb34.setIcon(icon_ebfbffae0a21699a1ee8dddfaf8790a7);
+        
+    
+        var popup_43e82180468358a6887c5d36d2f86556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba52e4809659d252e000041d6e2a169f = $(`<div id="html_ba52e4809659d252e000041d6e2a169f" style="width: 100.0%; height: 100.0%;"><b>Observatório do SUS FIOCRUZ</b><br><a href='https://observatoriodosus.ensp.fiocruz.br/' target='_blank'>https://observatoriodosus.ensp.fiocruz.br/</a></div>`)[0];
+            popup_43e82180468358a6887c5d36d2f86556.setContent(html_ba52e4809659d252e000041d6e2a169f);
+        
+
+        marker_38cdcf72544e444e4a6f4d5cab79cb34.bindPopup(popup_43e82180468358a6887c5d36d2f86556)
+        ;
+
+        
+    
+    
+            var marker_62847d83d8febef765c8acca87dd367f = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ba7cb486c5d06fd659e4bbc80efdba3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62847d83d8febef765c8acca87dd367f.setIcon(icon_ba7cb486c5d06fd659e4bbc80efdba3b);
+        
+    
+        var popup_ea0d77a0ac79cfa48fe622177787d43b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_864b4c54889b530564851c75e62e6c78 = $(`<div id="html_864b4c54889b530564851c75e62e6c78" style="width: 100.0%; height: 100.0%;"><b>Observatório da População Negra NESP-UNB </b><br><a href='https://nesp.unb.br/observatorios/#' target='_blank'>https://nesp.unb.br/observatorios/#</a></div>`)[0];
+            popup_ea0d77a0ac79cfa48fe622177787d43b.setContent(html_864b4c54889b530564851c75e62e6c78);
+        
+
+        marker_62847d83d8febef765c8acca87dd367f.bindPopup(popup_ea0d77a0ac79cfa48fe622177787d43b)
+        ;
+
+        
+    
+    
+            var marker_471ce4eeb4ff578cf390927db7263970 = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_4dd90bcce6d5ca3760b5e6c8b6144141 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_471ce4eeb4ff578cf390927db7263970.setIcon(icon_4dd90bcce6d5ca3760b5e6c8b6144141);
+        
+    
+        var popup_ca048ba20a325c8f40b7b6e36f3f9d0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_79283edd65af2c1aa5c487095e188736 = $(`<div id="html_79283edd65af2c1aa5c487095e188736" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde da Família NESP-UNB </b><br><a href='https://nesp.unb.br/observatorios/#' target='_blank'>https://nesp.unb.br/observatorios/#</a></div>`)[0];
+            popup_ca048ba20a325c8f40b7b6e36f3f9d0f.setContent(html_79283edd65af2c1aa5c487095e188736);
+        
+
+        marker_471ce4eeb4ff578cf390927db7263970.bindPopup(popup_ca048ba20a325c8f40b7b6e36f3f9d0f)
+        ;
+
+        
+    
+    
+            var marker_ac18fac349130526b87a7f0045c19068 = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_f9b7cd79b8d4c2fd6202ff77cb2f7e93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ac18fac349130526b87a7f0045c19068.setIcon(icon_f9b7cd79b8d4c2fd6202ff77cb2f7e93);
+        
+    
+        var popup_788352d66a18a5028274de468b43c5eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c19510af1227314157e1820101cc8525 = $(`<div id="html_c19510af1227314157e1820101cc8525" style="width: 100.0%; height: 100.0%;"><b>Observatório PopRua NESP-UNB </b><br><a href='https://nesp.unb.br/observatorios/#' target='_blank'>https://nesp.unb.br/observatorios/#</a></div>`)[0];
+            popup_788352d66a18a5028274de468b43c5eb.setContent(html_c19510af1227314157e1820101cc8525);
+        
+
+        marker_ac18fac349130526b87a7f0045c19068.bindPopup(popup_788352d66a18a5028274de468b43c5eb)
+        ;
+
+        
+    
+    
+            var marker_33059285d0373f4e6578879d4d88e59e = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_33edcf6f5ed0b34c2d9bcde0055220e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_33059285d0373f4e6578879d4d88e59e.setIcon(icon_33edcf6f5ed0b34c2d9bcde0055220e7);
+        
+    
+        var popup_8b5a880ef9b6c29cbc7ac347441c27fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d4b84c7adb5e7b1726a84cb22b45e360 = $(`<div id="html_d4b84c7adb5e7b1726a84cb22b45e360" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde do Homem NESP-UNB </b><br><a href='https://nesp.unb.br/observatorios/#' target='_blank'>https://nesp.unb.br/observatorios/#</a></div>`)[0];
+            popup_8b5a880ef9b6c29cbc7ac347441c27fb.setContent(html_d4b84c7adb5e7b1726a84cb22b45e360);
+        
+
+        marker_33059285d0373f4e6578879d4d88e59e.bindPopup(popup_8b5a880ef9b6c29cbc7ac347441c27fb)
+        ;
+
+        
+    
+    
+            var marker_b582b1a62dec725a7fbfa396b6a798c8 = L.marker(
+                [-15.766137, -47.87839488],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_4c3a8501b1ca49c2d09694d9f1c82eaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b582b1a62dec725a7fbfa396b6a798c8.setIcon(icon_4c3a8501b1ca49c2d09694d9f1c82eaa);
+        
+    
+        var popup_8799164cb9c9a1d55f91150431ebffb2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9d51d96432f7ea07b95c71eb1b9c870e = $(`<div id="html_9d51d96432f7ea07b95c71eb1b9c870e" style="width: 100.0%; height: 100.0%;"><b>Observatório de Recursos Humanos em Saúde (Observa RH) NESP-UNB </b><br><a href='https://nesp.unb.br/observatorios/#' target='_blank'>https://nesp.unb.br/observatorios/#</a></div>`)[0];
+            popup_8799164cb9c9a1d55f91150431ebffb2.setContent(html_9d51d96432f7ea07b95c71eb1b9c870e);
+        
+
+        marker_b582b1a62dec725a7fbfa396b6a798c8.bindPopup(popup_8799164cb9c9a1d55f91150431ebffb2)
+        ;
+
+        
+    
+    
+            var marker_b7b5eb26107f6f495ae6b7ab7fcd010f = L.marker(
+                [-22.87748008, -43.24387284],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_7864eed4606862db8fa537a45994ea71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7b5eb26107f6f495ae6b7ab7fcd010f.setIcon(icon_7864eed4606862db8fa537a45994ea71);
+        
+    
+        var popup_5c7682965c008b3c12efc58f6d9781f0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a0fe57e1343ef907f580ea7be19d9a4e = $(`<div id="html_a0fe57e1343ef907f580ea7be19d9a4e" style="width: 100.0%; height: 100.0%;"><b>Observatório das Estratégias da Indústria do Tabaco.</b><br><a href='https://tabaco.ensp.fiocruz.br/' target='_blank'>https://tabaco.ensp.fiocruz.br/</a></div>`)[0];
+            popup_5c7682965c008b3c12efc58f6d9781f0.setContent(html_a0fe57e1343ef907f580ea7be19d9a4e);
+        
+
+        marker_b7b5eb26107f6f495ae6b7ab7fcd010f.bindPopup(popup_5c7682965c008b3c12efc58f6d9781f0)
+        ;
+
+        
+    
+    
+            var marker_9213e0660b06a1e6bbe1ee533591e11b = L.marker(
+                [14.61672089, 120.9820339],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_c1af84f83aef5e36e8fea09c87ca9335 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9213e0660b06a1e6bbe1ee533591e11b.setIcon(icon_c1af84f83aef5e36e8fea09c87ca9335);
+        
+    
+        var popup_8bbab998869bb39b42f297050f4b4e9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cdeda3e909eef086351f132c09a0824 = $(`<div id="html_8cdeda3e909eef086351f132c09a0824" style="width: 100.0%; height: 100.0%;"><b>Asia Pacific Observatory on Health Systems and Policies (APO).</b><br><a href='https://apo.who.int/' target='_blank'>https://apo.who.int/</a></div>`)[0];
+            popup_8bbab998869bb39b42f297050f4b4e9b.setContent(html_8cdeda3e909eef086351f132c09a0824);
+        
+
+        marker_9213e0660b06a1e6bbe1ee533591e11b.bindPopup(popup_8bbab998869bb39b42f297050f4b4e9b)
+        ;
+
+        
+    
+    
+            var marker_e8b4d031fc2ac24fe78f3d7537a7de0e = L.marker(
+                [14.61672089, 120.9820339],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_eb41514c0652f11885131243b3ac41c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8b4d031fc2ac24fe78f3d7537a7de0e.setIcon(icon_eb41514c0652f11885131243b3ac41c2);
+        
+    
+        var popup_a2e9e746816385d03fd4f4645b3b7d54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8d7d792a9e2e8a4558595b11b54990ff = $(`<div id="html_8d7d792a9e2e8a4558595b11b54990ff" style="width: 100.0%; height: 100.0%;"><b>Plataforma de Informação em Saúde para a Região do Sudeste Asiático da OMS (Health Information Platform for the WHO South-East Asia Region).</b><br><a href='https://hip.searo.who.int/dhis/dhis-web-commons/security/login.action' target='_blank'>https://hip.searo.who.int/dhis/dhis-web-commons/security/login.action</a></div>`)[0];
+            popup_a2e9e746816385d03fd4f4645b3b7d54.setContent(html_8d7d792a9e2e8a4558595b11b54990ff);
+        
+
+        marker_e8b4d031fc2ac24fe78f3d7537a7de0e.bindPopup(popup_a2e9e746816385d03fd4f4645b3b7d54)
+        ;
+
+        
+    
+    
+            var marker_59fec951a54daf9e9938f60faa9564cf = L.marker(
+                [1.301101889, 103.7911624],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_6c14f3887886d60f6dcb6fc612196311 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59fec951a54daf9e9938f60faa9564cf.setIcon(icon_6c14f3887886d60f6dcb6fc612196311);
+        
+    
+        var popup_c4b39746ee572b9e1a9b746f30612e10 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4fefb8ca59f3becdebf33f39d2a28dce = $(`<div id="html_4fefb8ca59f3becdebf33f39d2a28dce" style="width: 100.0%; height: 100.0%;"><b>South East Asia Community Observatory (SEACO)</b><br><a href='https://www.monash.edu.my/seaco' target='_blank'>https://www.monash.edu.my/seaco</a></div>`)[0];
+            popup_c4b39746ee572b9e1a9b746f30612e10.setContent(html_4fefb8ca59f3becdebf33f39d2a28dce);
+        
+
+        marker_59fec951a54daf9e9938f60faa9564cf.bindPopup(popup_c4b39746ee572b9e1a9b746f30612e10)
+        ;
+
+        
+    
+    
+            var marker_34338242db1013f8a37086c688dd2956 = L.marker(
+                [35.74934632, 51.33363772],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_3bc6526d879ce7e2757ee12d87ab67cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_34338242db1013f8a37086c688dd2956.setIcon(icon_3bc6526d879ce7e2757ee12d87ab67cb);
+        
+    
+        var popup_0e02daedacd1286e3007af4f687aadb8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9b8b8b17a8fc35810da98159e2d51467 = $(`<div id="html_9b8b8b17a8fc35810da98159e2d51467" style="width: 100.0%; height: 100.0%;"><b>Sistema de Observatórios de Saúde da República Islâmica do Irã</b><br><a href='https://www.sid.ir/' target='_blank'>https://www.sid.ir/</a></div>`)[0];
+            popup_0e02daedacd1286e3007af4f687aadb8.setContent(html_9b8b8b17a8fc35810da98159e2d51467);
+        
+
+        marker_34338242db1013f8a37086c688dd2956.bindPopup(popup_0e02daedacd1286e3007af4f687aadb8)
+        ;
+
+        
+    
+    
+            var marker_37085af6c0e0fbfa25dc78dd451eb862 = L.marker(
+                [-34.61340306, -58.37714943],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ca4d06d647826b2e32a0b9f0d6cc5431 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_37085af6c0e0fbfa25dc78dd451eb862.setIcon(icon_ca4d06d647826b2e32a0b9f0d6cc5431);
+        
+    
+        var popup_e424ac70dfb4949105f8518e92a4ab4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_838a71cad7362debf9ea9887e2f19d40 = $(`<div id="html_838a71cad7362debf9ea9887e2f19d40" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde da Universidade ISALUD</b><br><a href='https://observatoriodesalud.isalud.edu.ar/' target='_blank'>https://observatoriodesalud.isalud.edu.ar/</a></div>`)[0];
+            popup_e424ac70dfb4949105f8518e92a4ab4f.setContent(html_838a71cad7362debf9ea9887e2f19d40);
+        
+
+        marker_37085af6c0e0fbfa25dc78dd451eb862.bindPopup(popup_e424ac70dfb4949105f8518e92a4ab4f)
+        ;
+
+        
+    
+    
+            var marker_5f86202f901cce93c9c8a7146b48d17e = L.marker(
+                [-33.42010345, -70.65370215],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_ffbd9ede5261f382f03a409eebd01788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5f86202f901cce93c9c8a7146b48d17e.setIcon(icon_ffbd9ede5261f382f03a409eebd01788);
+        
+    
+        var popup_83b5d06f3ef8810e9ee2bce0455ed147 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5eaa478bdf3370761299be3c6285e458 = $(`<div id="html_5eaa478bdf3370761299be3c6285e458" style="width: 100.0%; height: 100.0%;"><b>Observatório Chileno de Saúde Pública (OCHISAP).</b><br><a href='https://www.ochisap.cl/' target='_blank'>https://www.ochisap.cl/</a></div>`)[0];
+            popup_83b5d06f3ef8810e9ee2bce0455ed147.setContent(html_5eaa478bdf3370761299be3c6285e458);
+        
+
+        marker_5f86202f901cce93c9c8a7146b48d17e.bindPopup(popup_83b5d06f3ef8810e9ee2bce0455ed147)
+        ;
+
+        
+    
+    
+            var marker_3d2a8e2aae6dd5c8e64fb44e32afd401 = L.marker(
+                [5.497947026, -73.88700518],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_0eeff83d4813cd9ebcbab79531a9650c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d2a8e2aae6dd5c8e64fb44e32afd401.setIcon(icon_0eeff83d4813cd9ebcbab79531a9650c);
+        
+    
+        var popup_14b4b69e5042e30a8f1bac76b6a74dac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57c3f0b0e68b2682967d334170acdedc = $(`<div id="html_57c3f0b0e68b2682967d334170acdedc" style="width: 100.0%; height: 100.0%;"><b>Observatorio Nacional de Salud (ONS) da Colômbia.</b><br><a href='https://www.ins.gov.co/Direcciones/ONS/Paginas/default.aspx' target='_blank'>https://www.ins.gov.co/Direcciones/ONS/Paginas/default.aspx</a></div>`)[0];
+            popup_14b4b69e5042e30a8f1bac76b6a74dac.setContent(html_57c3f0b0e68b2682967d334170acdedc);
+        
+
+        marker_3d2a8e2aae6dd5c8e64fb44e32afd401.bindPopup(popup_14b4b69e5042e30a8f1bac76b6a74dac)
+        ;
+
+        
+    
+    
+            var marker_eb5ea4086bd3e488b4d7381c636af487 = L.marker(
+                [29.64671835, -82.35313665],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_d2d41130c2b08a286deb9a6fa0030453 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_eb5ea4086bd3e488b4d7381c636af487.setIcon(icon_d2d41130c2b08a286deb9a6fa0030453);
+        
+    
+        var popup_3718f5557f1e04e2a6e84aac2ae875c1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3adeb75e887f689c1c9f11827fc1709a = $(`<div id="html_3adeb75e887f689c1c9f11827fc1709a" style="width: 100.0%; height: 100.0%;"><b>Observatório de Justiça para Afrodescendentes na América Latina (OJALA)</b><br><a href='https://ojala.fiu.edu/' target='_blank'>https://ojala.fiu.edu/</a></div>`)[0];
+            popup_3718f5557f1e04e2a6e84aac2ae875c1.setContent(html_3adeb75e887f689c1c9f11827fc1709a);
+        
+
+        marker_eb5ea4086bd3e488b4d7381c636af487.bindPopup(popup_3718f5557f1e04e2a6e84aac2ae875c1)
+        ;
+
+        
+    
+    
+            var marker_1495a234dee8154f9868ece6db4be614 = L.marker(
+                [-32.88064115, -68.87786882],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_4be3dce72090dba6ae079f6193772c00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1495a234dee8154f9868ece6db4be614.setIcon(icon_4be3dce72090dba6ae079f6193772c00);
+        
+    
+        var popup_cfd5bccce837d816de605e41bc60a540 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7010c2ab776854e1ea1b5dcf8c3f387 = $(`<div id="html_a7010c2ab776854e1ea1b5dcf8c3f387" style="width: 100.0%; height: 100.0%;"><b>Observatório Latinoamericano de Indicadores de eVAluación (OLIVA)</b><br><a href='https://cecic.fcp.uncuyo.edu.ar/oliva/' target='_blank'>https://cecic.fcp.uncuyo.edu.ar/oliva/</a></div>`)[0];
+            popup_cfd5bccce837d816de605e41bc60a540.setContent(html_a7010c2ab776854e1ea1b5dcf8c3f387);
+        
+
+        marker_1495a234dee8154f9868ece6db4be614.bindPopup(popup_cfd5bccce837d816de605e41bc60a540)
+        ;
+
+        
+    
+    
+            var marker_692ec1bf0438edcbe1c01bbe43cae886 = L.marker(
+                [-23.57760111, -46.64000584],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_47ef81be6728cd798948fde068c00db0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_692ec1bf0438edcbe1c01bbe43cae886.setIcon(icon_47ef81be6728cd798948fde068c00db0);
+        
+    
+        var popup_f4c7ce9cd9c9fc67a1c3920f66af898a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9eead6ae4732e50f69a02d145560c53 = $(`<div id="html_a9eead6ae4732e50f69a02d145560c53" style="width: 100.0%; height: 100.0%;"><b>PLISA - Plataforma de Informação em Saúde para as Américas</b><br><a href='https://opendata.paho.org/em' target='_blank'>https://opendata.paho.org/em</a></div>`)[0];
+            popup_f4c7ce9cd9c9fc67a1c3920f66af898a.setContent(html_a9eead6ae4732e50f69a02d145560c53);
+        
+
+        marker_692ec1bf0438edcbe1c01bbe43cae886.bindPopup(popup_f4c7ce9cd9c9fc67a1c3920f66af898a)
+        ;
+
+        
+    
+    
+            var marker_1b5646769743937f87fdd79b6725ad12 = L.marker(
+                [38.88435875, -77.02068175],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_65e5b8d65d677882ac21f10b55d18a20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b5646769743937f87fdd79b6725ad12.setIcon(icon_65e5b8d65d677882ac21f10b55d18a20);
+        
+    
+        var popup_42ffe8642624693cf62e61d8e043b54b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ceee7791d9036f55ad7dad22919dffd8 = $(`<div id="html_ceee7791d9036f55ad7dad22919dffd8" style="width: 100.0%; height: 100.0%;"><b>Observatório de Saúde Pública dos Centros de Controle e Prevenção de Doenças (CDC/EUA).</b><br><a href='https://www.cdc.gov/index.html' target='_blank'>https://www.cdc.gov/index.html</a></div>`)[0];
+            popup_42ffe8642624693cf62e61d8e043b54b.setContent(html_ceee7791d9036f55ad7dad22919dffd8);
+        
+
+        marker_1b5646769743937f87fdd79b6725ad12.bindPopup(popup_42ffe8642624693cf62e61d8e043b54b)
+        ;
+
+        
+    
+    
+            var marker_64f7eff726c83ccbf94fc541037b6d40 = L.marker(
+                [-4.316044296, 15.27277951],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_0a3f14d8e75d8a74d725e470bb52e1f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_64f7eff726c83ccbf94fc541037b6d40.setIcon(icon_0a3f14d8e75d8a74d725e470bb52e1f8);
+        
+    
+        var popup_7f472b311c025112f0dd925e8603bb25 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2dd2816366f69b96a28ca639a6122a5 = $(`<div id="html_f2dd2816366f69b96a28ca639a6122a5" style="width: 100.0%; height: 100.0%;"><b>Integrated African Health Observatory (Observatório Integrado de Saúde Africano)</b><br><a href='https://aho.afro.who.int/?lang=pt' target='_blank'>https://aho.afro.who.int/?lang=pt</a></div>`)[0];
+            popup_7f472b311c025112f0dd925e8603bb25.setContent(html_f2dd2816366f69b96a28ca639a6122a5);
+        
+
+        marker_64f7eff726c83ccbf94fc541037b6d40.bindPopup(popup_7f472b311c025112f0dd925e8603bb25)
+        ;
+
+        
+    
+    
+            var marker_9dacd3460b1150b11619b8b329eb8e94 = L.marker(
+                [-4.316044296, 15.27277951],
+                {}
+            ).addTo(marker_cluster_4846c948decb9f329c0fec391517559f);
+        
+    
+            var icon_69aa34f046abe7038d42e448aa25e23b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9dacd3460b1150b11619b8b329eb8e94.setIcon(icon_69aa34f046abe7038d42e448aa25e23b);
+        
+    
+        var popup_0c352d753224ef547b90eae2312542e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1b02cc86b22b7bddedd20a7e80158a91 = $(`<div id="html_1b02cc86b22b7bddedd20a7e80158a91" style="width: 100.0%; height: 100.0%;"><b>Observatório Regional de Saúde do Mediterrâneo Oriental (Eastern Mediterranean Regional Health Observatory)</b><br><a href='https://www.emro.who.int/entity/statistics/regional-health-observatory.html' target='_blank'>https://www.emro.who.int/entity/statistics/regional-health-observatory.html</a></div>`)[0];
+            popup_0c352d753224ef547b90eae2312542e7.setContent(html_1b02cc86b22b7bddedd20a7e80158a91);
+        
+
+        marker_9dacd3460b1150b11619b8b329eb8e94.bindPopup(popup_0c352d753224ef547b90eae2312542e7)
+        ;
+
+        
+    
+</script>
+</html>
